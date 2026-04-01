@@ -46,26 +46,24 @@
     "signature": "Kirsti Edøy"
   },
   "product": {
-    "title": "Produkter – Takka AS",
+    "title": "Produkt – Takka AS",
     "description": "Utforsk produktkatalogen til Takka AS.",
     "heading": "Våre produkter",
-    "intro": "Vi tilbyr et bredt utvalg av kvalitetsprodukter nøye utvalgt for å møte dine behov.",
     "items": {
-      "p1": {
-        "name": "Produkt Alpha",
-        "description": "Et toppkvalitetsprodukt for krevende brukere."
+      "solemdalslefse": {
+        "name": "Solemdalslefse\u00ae",
+        "desc1": "Solemdalslefsa er en klassisk norsk tradisjonslefse, bakt etter oppskrift fra Solemdal. Tynnbakt, myk og med den karakteristiske smaken av smør og sukker. Perfekt til kaffe, eller som et mellommåltid når du trenger noe godt.",
+        "desc2": "Hver lefse bakes for hånd på tradisjonelt vis. Vi bruker kun råvarer av høyeste kvalitet, og tar oss god tid i alle ledd. Det smaker du på resultatet."
       },
-      "p2": {
-        "name": "Produkt Beta",
-        "description": "Pålitelig og effektivt – perfekt for hverdagen."
+      "buggelefse": {
+        "name": "Buggelefse\u00ae",
+        "desc1": "Buggelefsa er en tykkere og mer rustikk lefse med en fyldig og god smak. Oppskriften stammer fra Brokstad Gård og har gått i arv gjennom generasjoner. Perfekt til pålegg eller späkekjøtt.",
+        "desc2": "Vi baker buggelefsa med respekt for tradisjonen. God tid, gode råvarer og et ekte håndverk som du kan smake i hver bit."
       },
-      "p3": {
-        "name": "Produkt Gamma",
-        "description": "Innovativ løsning som forenkler hverdagen din."
-      },
-      "p4": {
-        "name": "Produkt Delta",
-        "description": "Profesjonell kvalitet tilgjengelig for alle."
+      "morsLefse": {
+        "name": "Mors lefse\u00ae",
+        "desc1": "Mors lefse er den mjuke, gode lefsa som minner om barndom og bestemødre. Enkel og ekte, uten snarveier. Bakt på poteter, mel og smør – slik det alltid har vært gjort.",
+        "desc2": "En smak av det som var. Mors lefse er for deg som setter pris på det enkle og genuine. Bakt med omtanke, hver eneste dag."
       }
     }
   },

@@ -1,52 +1,127 @@
 .page {
-  padding: var(--spacing-xl) var(--spacing-lg);
+  padding: 0;
 }
 
 .inner {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
-.heading {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: var(--spacing-md);
-}
-
-.intro {
-  max-width: 70ch;
+/* Breadcrumb */
+.breadcrumb {
   margin-bottom: var(--spacing-xl);
-  color: var(--color-fg-muted);
-  line-height: 1.8;
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
+.breadcrumbLink {
+  text-decoration: none;
+  color: var(--color-fg);
+}
+
+.breadcrumbLink:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbSep {
+  margin: 0 0.5rem;
+  opacity: 0.4;
+}
+
+.breadcrumbCurrent {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Product grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: var(--spacing-lg);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .card {
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card image */
+.cardImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
 }
 
 .cardImage {
-  background-color: var(--color-border);
-  height: 200px;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+.cardLabel {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  background-color: var(--color-fg);
+  color: var(--color-bg);
+  font-size: 0.6875rem;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.4rem 0.75rem;
+}
+
+/* Bumerker decoration */
+.bumerker {
+  position: absolute;
+  top: 0.75rem;
+  right: -2.5rem;
+  width: 80px;
+  transform: rotate(90deg);
+}
+
+/* Card body */
 .cardBody {
-  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.25rem;
 }
 
-.cardTitle {
-  font-size: 1.125rem;
-  margin-bottom: var(--spacing-sm);
+.cardBody p {
+  font-size: 0.875rem;
+  line-height: 1.75;
+  font-weight: var(--font-weight-light);
+  color: var(--color-fg);
+  margin: 0;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
-.cardDesc {
-  color: var(--color-fg-muted);
-  line-height: 1.6;
-  font-size: 0.9375rem;
+/* Responsive */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .bumerker {
+    display: none;
+  }
 }

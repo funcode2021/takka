@@ -49,23 +49,21 @@
     "title": "Products – Takka AS",
     "description": "Explore the product catalogue of Takka AS.",
     "heading": "Our products",
-    "intro": "We offer a wide range of quality products carefully selected to meet your needs.",
     "items": {
-      "p1": {
-        "name": "Product Alpha",
-        "description": "A top quality product for demanding users."
+      "solemdalslefse": {
+        "name": "Solemdalslefse\u00ae",
+        "desc1": "Solemdalslefse is a classic Norwegian traditional lefse, baked from a recipe from Solemdal. Thin, soft and with the characteristic taste of butter and sugar. Perfect with coffee, or as a snack when you need something good.",
+        "desc2": "Each lefse is baked by hand in the traditional way. We use only the finest ingredients and take our time at every step. You can taste it in the result."
       },
-      "p2": {
-        "name": "Product Beta",
-        "description": "Reliable and efficient – perfect for everyday use."
+      "buggelefse": {
+        "name": "Buggelefse\u00ae",
+        "desc1": "Buggelefse is a thicker, more rustic lefse with a rich and satisfying flavour. The recipe originates from Brokstad Gård and has been passed down through generations. Perfect with toppings or cured meats.",
+        "desc2": "We bake buggelefse with respect for tradition. Good time, fine ingredients and a genuine craft you can taste in every bite."
       },
-      "p3": {
-        "name": "Product Gamma",
-        "description": "Innovative solution that simplifies your everyday life."
-      },
-      "p4": {
-        "name": "Product Delta",
-        "description": "Professional quality available to everyone."
+      "morsLefse": {
+        "name": "Mors lefse\u00ae",
+        "desc1": "Mors lefse is the soft, comforting lefse that reminds you of childhood and grandmothers. Simple and authentic, with no shortcuts. Baked with potatoes, flour and butter – the way it has always been done.",
+        "desc2": "A taste of what was. Mors lefse is for those who appreciate the simple and genuine. Baked with care, every single day."
       }
     }
   },

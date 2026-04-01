@@ -49,23 +49,21 @@
     "title": "Produkt – Takka AS",
     "description": "Utforsk produktkatalogen til Takka AS.",
     "heading": "Produkta våre",
-    "intro": "Vi tilbyr eit breitt utval av kvalitetsprodukt nøye utvalde for å møte behova dine.",
     "items": {
-      "p1": {
-        "name": "Produkt Alpha",
-        "description": "Eit toppkvalitetsprodukt for krevjande brukarar."
+      "solemdalslefse": {
+        "name": "Solemdalslefse\u00ae",
+        "desc1": "Solemdalslefsa er ei klassisk norsk tradisjonslefse, baka etter oppskrift frå Solemdal. Tynnbaka, mjuk og med den karakteristiske smaken av smør og sukker. Perfekt til kaffi, eller som eit mellommåltid når du treng noko godt.",
+        "desc2": "Kvar lefse blir baka for hand på tradisjonelt vis. Vi brukar berre råvarer av høgaste kvalitet, og tek oss god tid i alle ledd. Det smakar du på resultatet."
       },
-      "p2": {
-        "name": "Produkt Beta",
-        "description": "Påliteleg og effektivt – perfekt for kvardagen."
+      "buggelefse": {
+        "name": "Buggelefse\u00ae",
+        "desc1": "Buggelefsa er ei tjukkare og meir rustikk lefse med ein fyldig og god smak. Oppskrifta stammar frå Brokstad Gård og har gått i arv gjennom generasjonar. Perfekt til pålegg eller späkekjøt.",
+        "desc2": "Vi bakar buggelefsa med respekt for tradisjonen. God tid, gode råvarer og eit ekte handverk som du kan smake i kvar bit."
       },
-      "p3": {
-        "name": "Produkt Gamma",
-        "description": "Innovativ løysing som forenklar kvardagen din."
-      },
-      "p4": {
-        "name": "Produkt Delta",
-        "description": "Profesjonell kvalitet tilgjengeleg for alle."
+      "morsLefse": {
+        "name": "Mors lefse\u00ae",
+        "desc1": "Mors lefse er den mjuke, gode lefsa som minner om barndom og bestemødre. Enkel og ekte, utan snarvegar. Baka på poteter, mjel og smør – slik det alltid har vore gjort.",
+        "desc2": "Ein smak av det som var. Mors lefse er for deg som set pris på det enkle og genuine. Baka med omtanke, kvar einaste dag."
       }
     }
   },

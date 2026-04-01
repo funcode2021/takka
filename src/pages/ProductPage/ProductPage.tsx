@@ -1,52 +1,77 @@
-import { useTranslation } from 'react-i18next'
-import SEO from '../../components/SEO/SEO'
-import JsonLd from '../../components/JsonLd/JsonLd'
-import styles from './ProductPage.module.css'
+import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
+import SEO from "../../components/SEO/SEO";
+import JsonLd from "../../components/JsonLd/JsonLd";
+import styles from "./ProductPage.module.css";
 
 const productSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  name: 'Takka AS – Produkter',
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Takka AS – Produkter",
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Produkt Alpha' },
-    { '@type': 'ListItem', position: 2, name: 'Produkt Beta' },
-    { '@type': 'ListItem', position: 3, name: 'Produkt Gamma' },
-    { '@type': 'ListItem', position: 4, name: 'Produkt Delta' },
+    { "@type": "ListItem", position: 1, name: "Solemdalslefse" },
+    { "@type": "ListItem", position: 2, name: "Buggelefse" },
+    { "@type": "ListItem", position: 3, name: "Mors lefse" },
   ],
-}
+};
 
-const PRODUCT_KEYS = ['p1', 'p2', 'p3', 'p4'] as const
+const PRODUCTS = [
+  { key: "solemdalslefse", image: "/webp/Takka_Takk for sist_26.webp" },
+  { key: "buggelefse", image: "/webp/Takka_Takk for sist_34.webp" },
+  { key: "morsLefse", image: "/webp/Takka_Takk for sist_25.webp" },
+] as const;
 
 export default function ProductPage() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <>
       <SEO
-        title={t('product.title')}
-        description={t('product.description')}
+        title={t("product.title")}
+        description={t("product.description")}
         canonical="https://takka.no/produkt"
       />
       <JsonLd schema={productSchema} />
 
       <section className={styles.page} aria-labelledby="product-heading">
         <div className={styles.inner}>
-          <h1 id="product-heading" className={styles.heading}>
-            {t('product.heading')}
+          <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+            <NavLink to="/" className={styles.breadcrumbLink}>
+              {t("nav.home")}
+            </NavLink>
+            <span className={styles.breadcrumbSep}>/</span>
+            <span className={styles.breadcrumbCurrent}>{t("nav.product")}</span>
+          </nav>
+
+          <h1 id="product-heading" className="sr-only">
+            {t("product.heading")}
           </h1>
-          <p className={styles.intro}>{t('product.intro')}</p>
 
           <ul className={styles.grid} role="list">
-            {PRODUCT_KEYS.map((key) => (
+            {PRODUCTS.map(({ key, image }, i) => (
               <li key={key} className={styles.card}>
-                <div
-                  className={styles.cardImage}
-                  role="img"
-                  aria-label={t(`product.items.${key}.name`)}
-                />
+                <div className={styles.cardImageWrap}>
+                  <img
+                    src={image}
+                    alt={t(`product.items.${key}.name`)}
+                    className={styles.cardImage}
+                    loading={i === 0 ? "eager" : "lazy"}
+                  />
+                  <span className={styles.cardLabel}>
+                    {t(`product.items.${key}.name`)}
+                  </span>
+                  {i === PRODUCTS.length - 1 && (
+                    <img
+                      src="/bumerker.svg"
+                      alt=""
+                      className={styles.bumerker}
+                      aria-hidden="true"
+                    />
+                  )}
+                </div>
                 <div className={styles.cardBody}>
-                  <h2 className={styles.cardTitle}>{t(`product.items.${key}.name`)}</h2>
-                  <p className={styles.cardDesc}>{t(`product.items.${key}.description`)}</p>
+                  <p>{t(`product.items.${key}.desc1`)}</p>
+                  <p>{t(`product.items.${key}.desc2`)}</p>
                 </div>
               </li>
             ))}
@@ -54,5 +79,5 @@ export default function ProductPage() {
         </div>
       </section>
     </>
-  )
+  );
 }
