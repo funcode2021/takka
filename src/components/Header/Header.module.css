@@ -83,7 +83,22 @@
   width: 24px;
   height: 2px;
   background-color: var(--color-fg);
-  transition: transform 0.2s;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* X shape when open */
+.toggleOpen .toggleBar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.toggleOpen .toggleBar:nth-child(2) {
+  opacity: 0;
+}
+
+.toggleOpen .toggleBar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Mobile menu */
@@ -92,9 +107,18 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
+
   .inner {
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     padding: 1rem var(--spacing-lg);
+    flex-wrap: wrap;
   }
 
   .navLeft,
@@ -104,6 +128,10 @@
 
   .toggle {
     display: flex;
+    position: absolute;
+    right: var(--spacing-lg);
+    top: 1rem;
+    z-index: 2;
   }
 
   .logoImg {
@@ -112,8 +140,9 @@
 
   .mobileMenu {
     display: none;
-    grid-column: 1 / -1;
-    padding-top: var(--spacing-md);
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .mobileMenuOpen {
@@ -123,6 +152,12 @@
   .mobileList {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .mobileList .navLink {
+    font-size: 0.875rem;
+    padding: 0.5rem 0;
   }
 }

@@ -90,7 +90,7 @@ export default function Header() {
         <button
           ref={toggleRef}
           type="button"
-          className={styles.toggle}
+          className={`${styles.toggle} ${menuOpen ? styles.toggleOpen : ""}`}
           aria-expanded={menuOpen}
           aria-controls="main-nav"
           aria-label={menuOpen ? "Lukk meny" : "Åpne meny"}
