@@ -26,24 +26,9 @@
     "title": "Takka AS",
     "description": "Velkommen til Takka AS – din lokale partner.",
     "hero": {
-      "heading": "Velkommen til Takka AS",
-      "sub": "Vi leverer kvalitetsprodukter og tjenester med hjerte og engasjement.",
-      "cta": "Lær mer om oss"
-    },
-    "features": {
-      "heading": "Hva vi tilbyr",
-      "quality": {
-        "title": "Kvalitet",
-        "text": "Vi setter kvalitet øverst i alt vi gjør."
-      },
-      "local": {
-        "title": "Lokalt forankret",
-        "text": "Stolt norsk selskap med dype røtter i lokalsamfunnet."
-      },
-      "service": {
-        "title": "God service",
-        "text": "Kundetilfredshet er vår høyeste prioritet."
-      }
+      "p1": "Har det på tunga. Den enkle, ekte smaken. Laget for hånd - ofte av bestemor.",
+      "p2": "Hos Takka tar vi vare på det som var. Oppskrifter, råvarer og tiden det tar.",
+      "p3": "Ikke noe mer. Bare lefser, slik de alltid har blitt laget."
     }
   },
   "about": {

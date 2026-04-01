@@ -26,24 +26,9 @@
     "title": "Takka AS",
     "description": "Welcome to Takka AS – your local partner.",
     "hero": {
-      "heading": "Welcome to Takka AS",
-      "sub": "We deliver quality products and services with heart and dedication.",
-      "cta": "Learn more about us"
-    },
-    "features": {
-      "heading": "What we offer",
-      "quality": {
-        "title": "Quality",
-        "text": "We put quality first in everything we do."
-      },
-      "local": {
-        "title": "Locally rooted",
-        "text": "A proud Norwegian company with deep roots in the local community."
-      },
-      "service": {
-        "title": "Great service",
-        "text": "Customer satisfaction is our highest priority."
-      }
+      "p1": "On the tip of the tongue. The simple, authentic taste. Made by hand – often by grandmother.",
+      "p2": "At Takka, we cherish what was. Recipes, ingredients, and the time it takes.",
+      "p3": "Nothing more. Just lefser, the way they have always been made."
     }
   },
   "about": {
