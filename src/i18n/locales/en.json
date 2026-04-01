@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "product": "Product",
+    "events": "What's on",
+    "contact": "Contact us"
+  },
+  "lang": {
+    "no-nb": "Norsk bokmål",
+    "no-nn": "Norsk nynorsk",
+    "en": "English",
+    "switch": "Switch language"
+  },
+  "skip": "Skip to main content",
+  "social": {
+    "facebook": "Visit us on Facebook",
+    "instagram": "Follow us on Instagram"
+  },
+  "footer": {
+    "copyright": "© {{year}} Takka AS. All rights reserved.",
+    "nav": "Navigation",
+    "follow": "Follow us"
+  },
+  "home": {
+    "title": "Takka AS",
+    "description": "Welcome to Takka AS – your local partner.",
+    "hero": {
+      "heading": "Welcome to Takka AS",
+      "sub": "We deliver quality products and services with heart and dedication.",
+      "cta": "Learn more about us"
+    },
+    "features": {
+      "heading": "What we offer",
+      "quality": {
+        "title": "Quality",
+        "text": "We put quality first in everything we do."
+      },
+      "local": {
+        "title": "Locally rooted",
+        "text": "A proud Norwegian company with deep roots in the local community."
+      },
+      "service": {
+        "title": "Great service",
+        "text": "Customer satisfaction is our highest priority."
+      }
+    }
+  },
+  "about": {
+    "title": "About us – Takka AS",
+    "description": "Read about the history, values and team behind Takka AS.",
+    "heading": "About Takka AS",
+    "history": {
+      "heading": "Our history",
+      "text": "Takka AS was founded with a vision to deliver the best products and services to the Norwegian market. Over the years we have built strong relationships with our customers and continuously improved our offering."
+    },
+    "values": {
+      "heading": "Our values",
+      "integrity": {
+        "title": "Integrity",
+        "text": "We always act honestly and transparently."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "text": "We continually seek new and better solutions."
+      },
+      "community": {
+        "title": "Community",
+        "text": "We are proud to contribute to the local community."
+      }
+    },
+    "team": {
+      "heading": "Our team",
+      "text": "Behind Takka AS stands a dedicated team of professionals who are passionate about what they do."
+    }
+  },
+  "product": {
+    "title": "Products – Takka AS",
+    "description": "Explore the product catalogue of Takka AS.",
+    "heading": "Our products",
+    "intro": "We offer a wide range of quality products carefully selected to meet your needs.",
+    "items": {
+      "p1": {
+        "name": "Product Alpha",
+        "description": "A top quality product for demanding users."
+      },
+      "p2": {
+        "name": "Product Beta",
+        "description": "Reliable and efficient – perfect for everyday use."
+      },
+      "p3": {
+        "name": "Product Gamma",
+        "description": "Innovative solution that simplifies your everyday life."
+      },
+      "p4": {
+        "name": "Product Delta",
+        "description": "Professional quality available to everyone."
+      }
+    }
+  },
+  "events": {
+    "title": "What's on – Takka AS",
+    "description": "See upcoming events and activities at Takka AS.",
+    "heading": "What's on",
+    "intro": "Stay up to date with the latest from Takka AS.",
+    "items": {
+      "e1": {
+        "title": "Product Launch Day",
+        "date": "2025-03-15",
+        "location": "Oslo, Norway",
+        "description": "We launch our latest product range. Come and experience it yourself!"
+      },
+      "e2": {
+        "title": "Customer Evening",
+        "date": "2025-04-10",
+        "location": "Bergen, Norway",
+        "description": "A pleasant evening for existing and potential customers."
+      },
+      "e3": {
+        "title": "Summer Fair",
+        "date": "2025-06-20",
+        "location": "Trondheim, Norway",
+        "description": "Meet us at the year's big summer fair."
+      }
+    },
+    "register": "Register"
+  },
+  "contact": {
+    "title": "Contact us – Takka AS",
+    "description": "Get in touch with Takka AS – we are happy to help.",
+    "heading": "Contact us",
+    "intro": "Do you have questions? We are here to help.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email address",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here...",
+      "submit": "Send message",
+      "success": "Thank you! We will be in touch soon.",
+      "error": "Something went wrong. Please try again.",
+      "required": "Required field",
+      "invalidEmail": "Invalid email address"
+    },
+    "info": {
+      "heading": "Contact information",
+      "address": "Address",
+      "addressValue": "Eksempelgata 1, 0001 Oslo",
+      "email": "Email",
+      "emailValue": "hello@takka.no",
+      "phone": "Phone",
+      "phoneValue": "+47 000 00 000"
+    },
+    "map": "Map coming soon"
+  }
+}

@@ -1,0 +1,110 @@
+/* Font faces - actual font files should be placed in /public/fonts/ */
+@font-face {
+  font-family: 'PPFraktionSans';
+  src: url('/fonts/PPFraktionSans-Bold.woff2') format('woff2'),
+       url('/fonts/PPFraktionSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPFraktionSans';
+  src: url('/fonts/PPFraktionSans-Light.woff2') format('woff2'),
+       url('/fonts/PPFraktionSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS Variables */
+:root {
+  --color-bg: #f7f4f1;
+  --color-fg: #000000;
+  --color-fg-muted: #333333;
+  --color-border: #cccccc;
+  --color-focus: #0057b8;
+  --font-family: 'PPFraktionSans', system-ui, -apple-system, sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-light: 300;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --max-width: 1200px;
+  --border-radius: 4px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-light);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--color-fg);
+  color: var(--color-bg);
+  padding: var(--spacing-sm) var(--spacing-md);
+  z-index: 9999;
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-fg);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}

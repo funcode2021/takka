@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "home": "Heim",
+    "about": "Om oss",
+    "product": "Produkt",
+    "events": "Kva skjer",
+    "contact": "Kontakt oss"
+  },
+  "lang": {
+    "no-nb": "Norsk bokmål",
+    "no-nn": "Norsk nynorsk",
+    "en": "English",
+    "switch": "Byt språk"
+  },
+  "skip": "Hopp til hovudinnhald",
+  "social": {
+    "facebook": "Vitje oss på Facebook",
+    "instagram": "Følg oss på Instagram"
+  },
+  "footer": {
+    "copyright": "© {{year}} Takka AS. Alle rettar atterhaldne.",
+    "nav": "Navigasjon",
+    "follow": "Følg oss"
+  },
+  "home": {
+    "title": "Takka AS",
+    "description": "Velkomen til Takka AS – din lokale partnar.",
+    "hero": {
+      "heading": "Velkomen til Takka AS",
+      "sub": "Vi leverer kvalitetsprodukt og tenester med hjarte og engasjement.",
+      "cta": "Les meir om oss"
+    },
+    "features": {
+      "heading": "Kva vi tilbyr",
+      "quality": {
+        "title": "Kvalitet",
+        "text": "Vi set kvalitet øvst i alt vi gjer."
+      },
+      "local": {
+        "title": "Lokalt forankra",
+        "text": "Stolt norsk selskap med djupe røter i lokalsamfunnet."
+      },
+      "service": {
+        "title": "God service",
+        "text": "Kundetilfredsheit er vår høgaste prioritet."
+      }
+    }
+  },
+  "about": {
+    "title": "Om oss – Takka AS",
+    "description": "Les om historia, verdiane og teamet bak Takka AS.",
+    "heading": "Om Takka AS",
+    "history": {
+      "heading": "Vår historie",
+      "text": "Takka AS vart grunnlagt med ein visjon om å levere dei beste produkta og tenestene til den norske marknaden. Gjennom åra har vi bygt sterke relasjonar med kundane våre og kontinuerleg forbetra tilbodet vårt."
+    },
+    "values": {
+      "heading": "Verdiane våre",
+      "integrity": {
+        "title": "Integritet",
+        "text": "Vi handlar alltid ærleg og transparent."
+      },
+      "innovation": {
+        "title": "Innovasjon",
+        "text": "Vi søkjer stadig nye og betre løysingar."
+      },
+      "community": {
+        "title": "Fellesskap",
+        "text": "Vi er stolte av å bidra til lokalsamfunnet."
+      }
+    },
+    "team": {
+      "heading": "Teamet vårt",
+      "text": "Bak Takka AS står eit dedikert team av fagfolk som brenn for det dei gjer."
+    }
+  },
+  "product": {
+    "title": "Produkt – Takka AS",
+    "description": "Utforsk produktkatalogen til Takka AS.",
+    "heading": "Produkta våre",
+    "intro": "Vi tilbyr eit breitt utval av kvalitetsprodukt nøye utvalde for å møte behova dine.",
+    "items": {
+      "p1": {
+        "name": "Produkt Alpha",
+        "description": "Eit toppkvalitetsprodukt for krevjande brukarar."
+      },
+      "p2": {
+        "name": "Produkt Beta",
+        "description": "Påliteleg og effektivt – perfekt for kvardagen."
+      },
+      "p3": {
+        "name": "Produkt Gamma",
+        "description": "Innovativ løysing som forenklar kvardagen din."
+      },
+      "p4": {
+        "name": "Produkt Delta",
+        "description": "Profesjonell kvalitet tilgjengeleg for alle."
+      }
+    }
+  },
+  "events": {
+    "title": "Kva skjer – Takka AS",
+    "description": "Sjå kommande arrangement og aktivitetar hjå Takka AS.",
+    "heading": "Kva skjer",
+    "intro": "Hald deg oppdatert på det siste frå Takka AS.",
+    "items": {
+      "e1": {
+        "title": "Produktlanseringsdag",
+        "date": "2025-03-15",
+        "location": "Oslo, Noreg",
+        "description": "Vi lanserer vår nyaste produktserie. Kom og opplev det sjølv!"
+      },
+      "e2": {
+        "title": "Kundekveld",
+        "date": "2025-04-10",
+        "location": "Bergen, Noreg",
+        "description": "Ein hyggeleg kveld for eksisterande og potensielle kundar."
+      },
+      "e3": {
+        "title": "Sommarmesse",
+        "date": "2025-06-20",
+        "location": "Trondheim, Noreg",
+        "description": "Møt oss på årets store sommarmesse."
+      }
+    },
+    "register": "Registrer deg"
+  },
+  "contact": {
+    "title": "Kontakt oss – Takka AS",
+    "description": "Ta kontakt med Takka AS – vi hjelper deg gjerne.",
+    "heading": "Kontakt oss",
+    "intro": "Har du spørsmål? Vi er her for å hjelpe.",
+    "form": {
+      "name": "Namn",
+      "namePlaceholder": "Fullt namn",
+      "email": "E-postadresse",
+      "emailPlaceholder": "din@epost.no",
+      "message": "Melding",
+      "messagePlaceholder": "Skriv meldinga di her...",
+      "submit": "Send melding",
+      "success": "Takk! Vi tek kontakt snart.",
+      "error": "Noko gjekk gale. Prøv igjen.",
+      "required": "Påkravd felt",
+      "invalidEmail": "Ugyldig e-postadresse"
+    },
+    "info": {
+      "heading": "Kontaktinformasjon",
+      "address": "Adresse",
+      "addressValue": "Eksempelgata 1, 0001 Oslo",
+      "email": "E-post",
+      "emailValue": "hei@takka.no",
+      "phone": "Telefon",
+      "phoneValue": "+47 000 00 000"
+    },
+    "map": "Kart kjem snart"
+  }
+}

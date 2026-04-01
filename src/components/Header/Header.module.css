@@ -1,0 +1,157 @@
+.header {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+
+.logo {
+  font-weight: var(--font-weight-bold);
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--color-fg);
+  letter-spacing: -0.02em;
+}
+
+.logo:hover {
+  text-decoration: underline;
+}
+
+.toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: var(--spacing-sm);
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggleBar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-fg);
+  transition: transform 0.2s;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.nav {
+}
+
+.navList {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.navLink {
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  font-size: 0.9375rem;
+  padding: var(--spacing-xs) 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.navLink:hover {
+  border-bottom-color: var(--color-fg);
+}
+
+.navLinkActive {
+  border-bottom-color: var(--color-fg);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.socialList {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--color-fg);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.socialLink:hover {
+  background-color: var(--color-fg);
+  color: var(--color-bg);
+}
+
+.socialIcon {
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    display: flex;
+  }
+
+  .navWrapper {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    padding: var(--spacing-md) var(--spacing-lg);
+    gap: var(--spacing-md);
+    align-items: flex-start;
+  }
+
+  .navWrapper.navOpen {
+    display: flex;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
