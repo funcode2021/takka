@@ -34,30 +34,16 @@
   "about": {
     "title": "Om oss – Takka AS",
     "description": "Les om historien, verdiene og teamet bak Takka AS.",
-    "heading": "Om Takka AS",
-    "history": {
-      "heading": "Vår historie",
-      "text": "Takka AS ble grunnlagt med en visjon om å levere de beste produktene og tjenestene til det norske markedet. Gjennom årene har vi bygget sterke relasjoner med kundene våre og kontinuerlig forbedret tilbudet vårt."
+    "heading": "Om oss",
+    "imageAlt": "Kirsti Elly i lefsebakeriet på Brokstad Gård",
+    "story": {
+      "p1": "Noen ting rett og slett er for gode til å forsvinne. Lefser er én av dem. Det var derfor jeg valgte å føre bakeriet videre.",
+      "p2": "Fra lefsebakeriet på Brokstad Gård holder vi nå liv i en tradisjonsrik norsk kulturarv og ønsker å bringe lefsa videre til yngre generasjoner.",
+      "p3": "Dette er ikke noe man jukser seg til. Det krever tid, litt tålmodighet – og en god porsjon arbeidsvilje.",
+      "p4": "Jeg har stor respekt for håndverket og for de som har gjort dette før meg. Anna, Ingunn og Ion. Min jobb er rett og slett å gjøre det like bra, hver eneste dag.",
+      "p5": "Og så håper jeg at flere får smaken på det. For når du først har smakt ei skikkelig god lefse, er det vanskelig å gå tilbake."
     },
-    "values": {
-      "heading": "Våre verdier",
-      "integrity": {
-        "title": "Integritet",
-        "text": "Vi handler alltid ærlig og transparent."
-      },
-      "innovation": {
-        "title": "Innovasjon",
-        "text": "Vi søker stadig nye og bedre løsninger."
-      },
-      "community": {
-        "title": "Fellesskap",
-        "text": "Vi er stolte av å bidra til lokalsamfunnet."
-      }
-    },
-    "team": {
-      "heading": "Teamet vårt",
-      "text": "Bak Takka AS står et dedikert team av fagfolk som brenner for det de gjør."
-    }
+    "signature": "Kirsti Edøy"
   },
   "product": {
     "title": "Produkter – Takka AS",

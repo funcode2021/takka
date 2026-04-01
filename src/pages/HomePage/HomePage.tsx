@@ -35,6 +35,10 @@ export default function HomePage() {
             alt=""
             className={styles.heroImage}
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1920}
+            height={1080}
           />
 
           <div className={styles.textCard}>

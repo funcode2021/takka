@@ -34,30 +34,16 @@
   "about": {
     "title": "About us – Takka AS",
     "description": "Read about the history, values and team behind Takka AS.",
-    "heading": "About Takka AS",
-    "history": {
-      "heading": "Our history",
-      "text": "Takka AS was founded with a vision to deliver the best products and services to the Norwegian market. Over the years we have built strong relationships with our customers and continuously improved our offering."
+    "heading": "About us",
+    "imageAlt": "Kirsti Elly in the lefse bakery at Brokstad Gård",
+    "story": {
+      "p1": "Some things are simply too good to disappear. Lefser are one of them. That is why I chose to carry the bakery forward.",
+      "p2": "From the lefse bakery at Brokstad Gård, we now keep a rich Norwegian cultural heritage alive and wish to bring the lefse tradition to younger generations.",
+      "p3": "This is not something you can take shortcuts with. It requires time, a little patience – and a good dose of hard work.",
+      "p4": "I have great respect for the craft and for those who did this before me. Anna, Ingunn and Ion. My job is simply to do it just as well, every single day.",
+      "p5": "And I hope that more people will get a taste for it. Because once you have tasted a really good lefse, it is hard to go back."
     },
-    "values": {
-      "heading": "Our values",
-      "integrity": {
-        "title": "Integrity",
-        "text": "We always act honestly and transparently."
-      },
-      "innovation": {
-        "title": "Innovation",
-        "text": "We continually seek new and better solutions."
-      },
-      "community": {
-        "title": "Community",
-        "text": "We are proud to contribute to the local community."
-      }
-    },
-    "team": {
-      "heading": "Our team",
-      "text": "Behind Takka AS stands a dedicated team of professionals who are passionate about what they do."
-    }
+    "signature": "Kirsti Edøy"
   },
   "product": {
     "title": "Products – Takka AS",
