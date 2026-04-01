@@ -1,86 +1,177 @@
 .page {
-  padding: var(--spacing-xl) var(--spacing-lg);
+  padding: 0;
 }
 
 .inner {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
-.heading {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: var(--spacing-md);
-}
-
-.intro {
-  max-width: 70ch;
+/* Breadcrumb */
+.breadcrumb {
   margin-bottom: var(--spacing-xl);
-  color: var(--color-fg-muted);
-  line-height: 1.8;
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-.eventList {
+.breadcrumbLink {
+  text-decoration: none;
+  color: var(--color-fg);
+}
+
+.breadcrumbLink:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbSep {
+  margin: 0 0.5rem;
+  opacity: 0.4;
+}
+
+.breadcrumbCurrent {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Bento grid – 3 flex columns */
+.grid {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.column {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-lg);
+  gap: 1.5rem;
 }
 
-.eventCard {
-  padding: var(--spacing-lg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius);
+.column:nth-child(1) {
+  flex: 2;
 }
 
-.eventDate {
+.column:nth-child(2) {
+  flex: 3;
+}
+
+.column:nth-child(3) {
+  flex: 4;
+}
+
+/* Card */
+.card {
+  position: relative;
   display: block;
-  font-size: 0.875rem;
+  overflow: hidden;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+}
+
+.card:hover::after {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.card:hover .cardImage {
+  transform: scale(1.03);
+}
+
+/* Aspect ratios per size */
+.small {
+  aspect-ratio: 3 / 4;
+}
+
+.medium {
+  aspect-ratio: 4 / 3;
+}
+
+.large {
+  aspect-ratio: 4 / 3;
+}
+
+/* Second item in each column can vary */
+.column:nth-child(1) .card:nth-child(2) {
+  aspect-ratio: 3 / 4;
+}
+
+.column:nth-child(2) .card:nth-child(2) {
+  aspect-ratio: 3 / 4;
+}
+
+.column:nth-child(3) .card:nth-child(2) {
+  aspect-ratio: 4 / 3;
+}
+
+.cardImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cardLabel {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  color: #fff;
+  font-size: 0.6875rem;
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.12em;
+  z-index: 1;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.eventTitle {
-  font-size: 1.375rem;
-  margin-bottom: var(--spacing-sm);
+/* Indicator */
+.indicator {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  margin-top: 1.5rem;
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-light);
+  color: var(--color-fg);
+  opacity: 0.5;
 }
 
-.eventLocation {
-  font-size: 0.9375rem;
-  color: var(--color-fg-muted);
-  margin-bottom: var(--spacing-sm);
-}
-
-.eventDesc {
-  color: var(--color-fg-muted);
-  line-height: 1.7;
-  margin-bottom: var(--spacing-md);
-}
-
-.registerLink {
-  display: inline-block;
-  border: 1px solid var(--color-fg);
-  padding: 0.5rem 1rem;
-  text-decoration: none;
+.indicatorActive {
   font-weight: var(--font-weight-bold);
-  font-size: 0.875rem;
-  border-radius: var(--border-radius);
-  transition: background-color 0.2s, color 0.2s;
+  opacity: 1;
 }
 
-.registerLink:hover {
-  background-color: var(--color-fg);
-  color: var(--color-bg);
+.indicatorSep {
+  margin: 0 0.15rem;
 }
 
-.srOnly {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: none;
+  }
+
+  .small,
+  .medium,
+  .large {
+    aspect-ratio: 4 / 3;
+  }
+
+  .column:nth-child(1) .card:nth-child(2),
+  .column:nth-child(2) .card:nth-child(2),
+  .column:nth-child(3) .card:nth-child(2) {
+    aspect-ratio: 4 / 3;
+  }
 }

@@ -1,105 +1,106 @@
-import { useTranslation } from 'react-i18next'
-import SEO from '../../components/SEO/SEO'
-import JsonLd from '../../components/JsonLd/JsonLd'
-import styles from './EventPage.module.css'
+import { useTranslation } from "react-i18next";
+import { NavLink, Link } from "react-router-dom";
+import SEO from "../../components/SEO/SEO";
+import JsonLd from "../../components/JsonLd/JsonLd";
+import { EVENT_SLUGS, EVENT_KEYS, EVENT_IMAGES } from "./EventDetailPage";
+import styles from "./EventPage.module.css";
 
-const EVENT_KEYS = ['e1', 'e2', 'e3'] as const
+const eventSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Takka AS – Hva skjer",
+  itemListElement: EVENT_SLUGS.map((slug, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: slug,
+    url: `https://takka.no/hva-skjer/${slug}`,
+  })),
+};
 
-interface EventData {
-  title: string
-  date: string
-  location: string
-  description: string
-}
-
-function buildEventSchema(events: EventData[]) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    itemListElement: events.map((ev, idx) => ({
-      '@type': 'ListItem',
-      position: idx + 1,
-      item: {
-        '@type': 'Event',
-        name: ev.title,
-        startDate: ev.date,
-        location: {
-          '@type': 'Place',
-          name: ev.location,
-        },
-        description: ev.description,
-        organizer: {
-          '@type': 'Organization',
-          name: 'Takka AS',
-          url: 'https://takka.no',
-        },
-      },
-    })),
-  }
-}
+/** Bento grid sizing per item index */
+const SIZES: Array<"small" | "medium" | "large"> = [
+  "small",
+  "medium",
+  "large",
+  "small",
+  "medium",
+  "large",
+];
 
 export default function EventPage() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
-  const events = EVENT_KEYS.map((key) => ({
-    key,
-    title: t(`events.items.${key}.title`),
-    date: t(`events.items.${key}.date`),
-    location: t(`events.items.${key}.location`),
-    description: t(`events.items.${key}.description`),
-  }))
-
-  const eventSchema = buildEventSchema(events)
-
-  const formatDate = (dateStr: string) => {
-    const date = new Date(dateStr)
-    return date.toLocaleDateString('no-NO', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-    })
-  }
+  /* Split items into 3 columns: [0,3], [1,4], [2,5] */
+  const columns = [
+    [0, 3],
+    [1, 4],
+    [2, 5],
+  ];
 
   return (
     <>
       <SEO
-        title={t('events.title')}
-        description={t('events.description')}
+        title={t("events.title")}
+        description={t("events.description")}
         canonical="https://takka.no/hva-skjer"
       />
       <JsonLd schema={eventSchema} />
 
       <section className={styles.page} aria-labelledby="events-heading">
         <div className={styles.inner}>
-          <h1 id="events-heading" className={styles.heading}>
-            {t('events.heading')}
-          </h1>
-          <p className={styles.intro}>{t('events.intro')}</p>
+          <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+            <NavLink to="/" className={styles.breadcrumbLink}>
+              {t("nav.home")}
+            </NavLink>
+            <span className={styles.breadcrumbSep}>/</span>
+            <span className={styles.breadcrumbCurrent}>{t("nav.events")}</span>
+          </nav>
 
-          <ul className={styles.eventList} role="list">
-            {events.map(({ key, title, date, location, description }) => (
-              <li key={key} className={styles.eventCard}>
-                <article aria-labelledby={`event-${key}-title`}>
-                  <time className={styles.eventDate} dateTime={date}>
-                    {formatDate(date)}
-                  </time>
-                  <h2 id={`event-${key}-title`} className={styles.eventTitle}>
-                    {title}
-                  </h2>
-                  <p className={styles.eventLocation}>
-                    <span className={styles.srOnly}>Sted: </span>
-                    {location}
-                  </p>
-                  <p className={styles.eventDesc}>{description}</p>
-                  <a href="#kontakt" className={styles.registerLink}>
-                    {t('events.register')}
-                  </a>
-                </article>
-              </li>
+          <h1 id="events-heading" className="sr-only">
+            {t("events.heading")}
+          </h1>
+
+          <div className={styles.grid} role="list">
+            {columns.map((indices, colIdx) => (
+              <div key={colIdx} className={styles.column}>
+                {indices.map((i) => {
+                  const slug = EVENT_SLUGS[i];
+                  const key = EVENT_KEYS[slug];
+                  const image = EVENT_IMAGES[slug];
+                  const size = SIZES[i];
+                  return (
+                    <Link
+                      key={slug}
+                      to={`/hva-skjer/${slug}`}
+                      className={`${styles.card} ${styles[size]}`}
+                      role="listitem"
+                      aria-label={t(`events.items.${key}.label`)}
+                    >
+                      <img
+                        src={image}
+                        alt=""
+                        className={styles.cardImage}
+                        loading={i < 3 ? "eager" : "lazy"}
+                      />
+                      <span className={styles.cardLabel}>
+                        {t(`events.items.${key}.label`)}
+                      </span>
+                    </Link>
+                  );
+                })}
+              </div>
             ))}
-          </ul>
+          </div>
+
+          <div className={styles.indicator} aria-hidden="true">
+            <span className={styles.indicatorActive}>1</span>
+            <span className={styles.indicatorSep}>/</span>
+            <span>2</span>
+            <span className={styles.indicatorSep}>/</span>
+            <span>3</span>
+          </div>
         </div>
       </section>
     </>
-  )
+  );
 }

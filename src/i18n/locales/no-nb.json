@@ -69,30 +69,70 @@
   },
   "events": {
     "title": "Hva skjer – Takka AS",
-    "description": "Se kommende arrangementer og aktiviteter hos Takka AS.",
+    "description": "Historier og hendelser fra Takka AS – tradisjonsrikt lefsebakeri.",
     "heading": "Hva skjer",
-    "intro": "Hold deg oppdatert på det siste fra Takka AS.",
     "items": {
-      "e1": {
-        "title": "Produktlanseringsdag",
-        "date": "2025-03-15",
-        "location": "Oslo, Norge",
-        "description": "Vi lanserer vår nyeste produktserie. Kom og opplev det selv!"
+      "godeRavarer": {
+        "label": "Gode råvarer",
+        "story": {
+          "p1": "Alt begynner med råvarene. Vi bruker kun mel av høyeste kvalitet, ekte smør og ferske poteter fra lokale gårder.",
+          "p2": "Hver ingrediens er nøye utvalgt for å sikre at smaken blir akkurat slik den skal være — rik, ren og ekte.",
+          "p3": "Vi tror på at gode råvarer er grunnlaget for godt håndverk. Uten dem, ingen skikkelig lefse.",
+          "p4": "Leverandørene våre deler vår lidenskap for kvalitet. Mange av dem har vi samarbeidet med i flere tiår.",
+          "p5": "Det er ingen snarveier. Og det er nettopp det som gjør forskjellen."
+        }
       },
-      "e2": {
-        "title": "Kundekveld",
-        "date": "2025-04-10",
-        "location": "Bergen, Norge",
-        "description": "En hyggelig kveld for eksisterende og potensielle kunder."
+      "hviletidenDetTar": {
+        "label": "Hviletiden det tar",
+        "story": {
+          "p1": "Noen ting rett og slett er for gode til å forsvinne. Lefser er én av dem. Det var derfor jeg valgte å føre bakeriet videre.",
+          "p2": "Fra lefsebakeriet på Brokstad Gård holder vi nå liv i en tradisjonsrik norsk kulturarv og ønsker å bringe lefsa videre til yngre generasjoner.",
+          "p3": "Dette er ikke noe man jukser seg til. Det krever tid, litt tålmodighet – og en god porsjon arbeidsvilje.",
+          "p4": "Jeg har stor respekt for håndverket og for de som har gjort dette før meg. Anna, Ingunn og Ion. Min jobb er rett og slett å gjøre det like bra, hver eneste dag.",
+          "p5": "Og så håper jeg at flere får smaken på det. For når du først har smakt ei skikkelig god lefse, er det vanskelig å gå tilbake."
+        }
       },
-      "e3": {
-        "title": "Sommermesse",
-        "date": "2025-06-20",
-        "location": "Trondheim, Norge",
-        "description": "Møt oss på årets store sommermesse."
+      "motOssPaMarked": {
+        "label": "Møt oss på marked",
+        "story": {
+          "p1": "Vi elsker å møte kundene våre ansikt til ansikt. Derfor finner du oss jevnlig på lokale markeder og matfestivaler.",
+          "p2": "Her kan du smake på lefsene våre, slå av en prat og lære mer om tradisjonen bak hvert eneste produkt.",
+          "p3": "Markedsdagene er noe av det vi setter mest pris på. Det er her vi får direkte tilbakemeldinger og nye ideer.",
+          "p4": "Følg oss på sosiale medier for å se hvor vi dukker opp neste gang.",
+          "p5": "Vi gleder oss til å treffe deg!"
+        }
+      },
+      "paTakka": {
+        "label": "På takka",
+        "story": {
+          "p1": "Takka er hjertet i bakeriet. Det er her deigen møter varmen og magien skjer.",
+          "p2": "Å bake på takka krever øvelse og fingerspitzgefühl. Temperaturen må være akkurat riktig, og timingen er alt.",
+          "p3": "Hver lefse stekes individuelt, vendt for hånd — akkurat slik det har blitt gjort i generasjoner.",
+          "p4": "Lyden av deig mot varm takke, duften av nystekt lefse. Det er få ting som kan måle seg.",
+          "p5": "Vi baker med stolthet og omtanke, hver eneste dag."
+        }
+      },
+      "viSikterHoyt": {
+        "label": "Vi sikter høyt",
+        "story": {
+          "p1": "Å sikte mel er et av de viktigste stegene i prosessen. Det gir et lettere, luftigere resultat.",
+          "p2": "Vi bruker tradisjonelle siktemetoder kombinert med moderne utstyr for å oppnå perfekt konsistens.",
+          "p3": "Det handler om presisjon. Riktig mengde mel, riktig sikting, riktig tekstur.",
+          "p4": "Små detaljer utgjør stor forskjell i sluttproduktet. Det er noe vi aldri kompromisser på.",
+          "p5": "For oss er det ikke bare et ordspill — vi sikter faktisk høyt, i alt vi gjør."
+        }
+      },
+      "redskap": {
+        "label": "Redskap",
+        "story": {
+          "p1": "Bak hver gode lefse står gode redskaper. Kjevler, bakstefjøler, lefsekoster og takker — alle med sin historie.",
+          "p2": "Mange av redskapene våre har gått i arv. De bærer preg av tiår med bruk og omsorg.",
+          "p3": "En god kjevle ligger godt i hånden og gir jevn tykkelse. En god lefsekost smører akkurat passe.",
+          "p4": "Vi tar vare på verktøyet vårt, for det er en del av håndverket.",
+          "p5": "Tradisjon er ikke bare oppskrifter — det er også redskapene vi bruker og respekten vi har for dem."
+        }
       }
-    },
-    "register": "Registrer deg"
+    }
   },
   "contact": {
     "title": "Kontakt oss – Takka AS",

@@ -69,30 +69,70 @@
   },
   "events": {
     "title": "What's on – Takka AS",
-    "description": "See upcoming events and activities at Takka AS.",
+    "description": "Stories and happenings from Takka AS – a traditional lefse bakery.",
     "heading": "What's on",
-    "intro": "Stay up to date with the latest from Takka AS.",
     "items": {
-      "e1": {
-        "title": "Product Launch Day",
-        "date": "2025-03-15",
-        "location": "Oslo, Norway",
-        "description": "We launch our latest product range. Come and experience it yourself!"
+      "godeRavarer": {
+        "label": "Fine ingredients",
+        "story": {
+          "p1": "Everything starts with the ingredients. We use only the finest flour, real butter and fresh potatoes from local farms.",
+          "p2": "Every ingredient is carefully selected to ensure the taste is exactly as it should be — rich, pure and authentic.",
+          "p3": "We believe that fine ingredients are the foundation of good craft. Without them, no proper lefse.",
+          "p4": "Our suppliers share our passion for quality. Many of them we have worked with for decades.",
+          "p5": "There are no shortcuts. And that is precisely what makes the difference."
+        }
       },
-      "e2": {
-        "title": "Customer Evening",
-        "date": "2025-04-10",
-        "location": "Bergen, Norway",
-        "description": "A pleasant evening for existing and potential customers."
+      "hviletidenDetTar": {
+        "label": "The resting time",
+        "story": {
+          "p1": "Some things are simply too good to disappear. Lefser are one of them. That is why I chose to carry the bakery forward.",
+          "p2": "From the lefse bakery at Brokstad Farm we are keeping a rich Norwegian cultural heritage alive and want to bring the lefse to younger generations.",
+          "p3": "This is not something you can cheat your way through. It takes time, a bit of patience — and a good deal of determination.",
+          "p4": "I have great respect for the craft and for those who have done this before me. Anna, Ingunn and Ion. My job is simply to do it just as well, every single day.",
+          "p5": "And I hope more people will develop a taste for it. Because once you have tasted a truly good lefse, it is hard to go back."
+        }
       },
-      "e3": {
-        "title": "Summer Fair",
-        "date": "2025-06-20",
-        "location": "Trondheim, Norway",
-        "description": "Meet us at the year's big summer fair."
+      "motOssPaMarked": {
+        "label": "Meet us at market",
+        "story": {
+          "p1": "We love meeting our customers face to face. That is why you will find us regularly at local markets and food festivals.",
+          "p2": "Here you can taste our lefser, have a chat and learn more about the tradition behind each product.",
+          "p3": "Market days are among our favourites. This is where we get direct feedback and new ideas.",
+          "p4": "Follow us on social media to see where we pop up next.",
+          "p5": "We look forward to meeting you!"
+        }
+      },
+      "paTakka": {
+        "label": "On the griddle",
+        "story": {
+          "p1": "The griddle is the heart of the bakery. This is where the dough meets the heat and the magic happens.",
+          "p2": "Baking on the griddle requires practice and instinct. The temperature must be just right, and timing is everything.",
+          "p3": "Each lefse is baked individually, turned by hand — exactly as it has been done for generations.",
+          "p4": "The sound of dough on a hot griddle, the aroma of freshly baked lefse. Few things compare.",
+          "p5": "We bake with pride and care, every single day."
+        }
+      },
+      "viSikterHoyt": {
+        "label": "We aim high",
+        "story": {
+          "p1": "Sifting flour is one of the most important steps in the process. It gives a lighter, airier result.",
+          "p2": "We use traditional sifting methods combined with modern equipment to achieve perfect consistency.",
+          "p3": "It is about precision. The right amount of flour, the right sifting, the right texture.",
+          "p4": "Small details make a big difference in the final product. That is something we never compromise on.",
+          "p5": "For us it is not just a play on words — we truly aim high, in everything we do."
+        }
+      },
+      "redskap": {
+        "label": "Tools",
+        "story": {
+          "p1": "Behind every good lefse are good tools. Rolling pins, baking boards, lefse brushes and griddles — each with its own story.",
+          "p2": "Many of our tools have been passed down. They bear the marks of decades of use and care.",
+          "p3": "A good rolling pin sits well in the hand and gives an even thickness. A good lefse brush applies just the right amount.",
+          "p4": "We take care of our tools, because they are part of the craft.",
+          "p5": "Tradition is not only recipes — it is also the tools we use and the respect we have for them."
+        }
       }
-    },
-    "register": "Register"
+    }
   },
   "contact": {
     "title": "Contact us – Takka AS",
