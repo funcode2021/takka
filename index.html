@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAKKA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="main-nav">
+      <ul class="nav-left">
+        <li><a href="#om-oss">Om oss</a></li>
+        <li><a href="#produkt">Produkt</a></li>
+        <li><a href="#hva-skjer">Hva skjer</a></li>
+      </ul>
+
+      <div class="logo">
+        <svg class="logo-icon" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <line x1="10" y1="5"  x2="50" y2="35" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+          <line x1="50" y1="5"  x2="10" y2="35" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+          <line x1="10" y1="12" x2="50" y2="28" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+          <line x1="50" y1="12" x2="10" y2="28" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <a href="/" class="logo-text">TAKKA</a>
+      </div>
+
+      <ul class="nav-right">
+        <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#kontakt-oss">Kontakt oss</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Forsidebilde">
+      <div class="hero-slider" role="region" aria-roledescription="slideshow">
+
+        <div class="hero-slide active" aria-label="Slide 1 av 3">
+          <img
+            src="images/slide1.jpg"
+            alt="Meldekte lefseemner og kjevler"
+            class="hero-img"
+          />
+          <div class="hero-caption">
+            <p>Har det på tunga. Den enkle, ekte smaken. Laget for hånd – ofte av bestemor.</p>
+            <p>Hos Takka tar vi vare på det som var. Oppskrifter, råvarer og tiden det tar.</p>
+            <p>Ikke noe mer. Bare lefser, slik de alltid har blitt laget.</p>
+          </div>
+        </div>
+
+        <div class="hero-slide" aria-label="Slide 2 av 3">
+          <img
+            src="images/slide2.jpg"
+            alt="Lefse på takke"
+            class="hero-img"
+          />
+        </div>
+
+        <div class="hero-slide" aria-label="Slide 3 av 3">
+          <img
+            src="images/slide3.jpg"
+            alt="Ferdige lefser"
+            class="hero-img"
+          />
+        </div>
+
+      </div>
+
+      <div class="hero-controls">
+        <button class="hero-prev" aria-label="Forrige slide">&#8592;</button>
+        <span class="hero-counter" aria-live="polite">
+          <span class="current-slide">1</span>
+          <span class="separator"> / </span>
+          <span class="total-slides">3</span>
+        </span>
+        <button class="hero-next" aria-label="Neste slide">&#8594;</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
