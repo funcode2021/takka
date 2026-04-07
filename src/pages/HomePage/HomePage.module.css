@@ -57,12 +57,12 @@
 
 .indicatorMuted {
   color: var(--color-fg);
-  opacity: 0.4;
+  opacity: 0.55;
 }
 
 .indicatorSep {
   color: var(--color-fg);
-  opacity: 0.4;
+  opacity: 0.55;
 }
 
 /* Responsive */

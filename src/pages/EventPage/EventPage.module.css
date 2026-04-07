@@ -28,7 +28,7 @@
 
 .breadcrumbSep {
   margin: 0 0.5rem;
-  opacity: 0.4;
+  opacity: 0.55;
 }
 
 .breadcrumbCurrent {
@@ -141,7 +141,7 @@
   font-size: 0.8125rem;
   font-weight: var(--font-weight-light);
   color: var(--color-fg);
-  opacity: 0.5;
+  opacity: 0.55;
 }
 
 .indicatorActive {
