@@ -52,6 +52,10 @@
   color: var(--color-fg);
   padding: var(--spacing-xs) 0;
   transition: opacity 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .navLink:hover {

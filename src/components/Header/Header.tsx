@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useRef, useEffect, useCallback } from "react";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import styles from "./Header.module.css";
 
@@ -8,25 +8,45 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const leftNav = [
-    { path: "/om-oss", label: t("nav.about") },
+  const scrollToHash = useCallback(
+    (hash: string) => {
+      setMenuOpen(false);
+      if (location.pathname === "/") {
+        const el = document.getElementById(hash);
+        el?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        navigate("/#" + hash);
+      }
+    },
+    [location.pathname, navigate],
+  );
+
+  const leftNav: Array<
+    { label: string } & (
+      | { path: string; hash?: undefined }
+      | { hash: string; path?: undefined }
+    )
+  > = [
+    { hash: "om-oss", label: t("nav.about") },
     { path: "/produkt", label: t("nav.product") },
     { path: "/hva-skjer", label: t("nav.events") },
   ];
 
   const rightNav = [
     {
-      href: "https://www.facebook.com/takkaas",
+      href: "https://www.facebook.com/people/TAKKA/61580737300168/?mibextid=wwXIfr&rdid=JGCTfzk6aNGOn1cs&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DWx59BcdQ%2F%3Fmibextid%3DwwXIfr",
       label: "Facebook",
-      external: true,
+      external: true as const,
     },
     {
-      href: "https://www.instagram.com/takkaas",
+      href: "https://www.instagram.com/rett_fra_takka",
       label: "Instagram",
-      external: true,
+      external: true as const,
     },
-    { path: "/kontakt-oss", label: t("nav.contact"), external: false },
+    { hash: "kontakt-oss", label: t("nav.contact"), external: false as const },
   ];
 
   useEffect(() => {
@@ -61,17 +81,27 @@ export default function Header() {
         {/* Left nav */}
         <nav aria-label="Primær navigasjon" className={styles.navLeft}>
           <ul className={styles.navList} role="list">
-            {leftNav.map(({ path, label }) => (
-              <li key={path}>
-                <NavLink
-                  to={path}
-                  className={({ isActive }) =>
-                    `${styles.navLink} ${isActive ? styles.navLinkActive : ""}`
-                  }
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {label}
-                </NavLink>
+            {leftNav.map((item) => (
+              <li key={item.hash ?? item.path}>
+                {item.hash ? (
+                  <button
+                    type="button"
+                    className={styles.navLink}
+                    onClick={() => scrollToHash(item.hash)}
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <NavLink
+                    to={item.path!}
+                    className={({ isActive }) =>
+                      `${styles.navLink} ${isActive ? styles.navLinkActive : ""}`
+                    }
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {item.label}
+                  </NavLink>
+                )}
               </li>
             ))}
           </ul>
@@ -117,15 +147,13 @@ export default function Header() {
                     {item.label}
                   </a>
                 ) : (
-                  <NavLink
-                    to={item.path!}
-                    className={({ isActive }) =>
-                      `${styles.navLink} ${isActive ? styles.navLinkActive : ""}`
-                    }
-                    onClick={() => setMenuOpen(false)}
+                  <button
+                    type="button"
+                    className={styles.navLink}
+                    onClick={() => scrollToHash(item.hash!)}
                   >
                     {item.label}
-                  </NavLink>
+                  </button>
                 )}
               </li>
             ))}
@@ -139,15 +167,25 @@ export default function Header() {
           className={`${styles.mobileMenu} ${menuOpen ? styles.mobileMenuOpen : ""}`}
         >
           <ul className={styles.mobileList} role="list">
-            {leftNav.map(({ path, label }) => (
-              <li key={path}>
-                <NavLink
-                  to={path}
-                  className={styles.navLink}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {label}
-                </NavLink>
+            {leftNav.map((item) => (
+              <li key={item.hash ?? item.path}>
+                {item.hash ? (
+                  <button
+                    type="button"
+                    className={styles.navLink}
+                    onClick={() => scrollToHash(item.hash)}
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <NavLink
+                    to={item.path!}
+                    className={styles.navLink}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {item.label}
+                  </NavLink>
+                )}
               </li>
             ))}
             {rightNav.map((item) => (
@@ -162,13 +200,13 @@ export default function Header() {
                     {item.label}
                   </a>
                 ) : (
-                  <NavLink
-                    to={item.path!}
+                  <button
+                    type="button"
                     className={styles.navLink}
-                    onClick={() => setMenuOpen(false)}
+                    onClick={() => scrollToHash(item.hash!)}
                   >
                     {item.label}
-                  </NavLink>
+                  </button>
                 )}
               </li>
             ))}

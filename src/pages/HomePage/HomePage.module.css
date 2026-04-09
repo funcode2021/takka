@@ -83,3 +83,204 @@
     padding: 1.75rem 2rem;
   }
 }
+
+/* ─── About section ─── */
+
+.about {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.aboutInner {
+  padding: var(--spacing-xl) 0;
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.aboutLeft {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.bumerker {
+  width: 156px;
+  flex-shrink: 0;
+  transform: rotate(90deg);
+  margin-left: 0px;
+}
+
+.portrait {
+  width: 260px;
+  height: auto;
+  object-fit: cover;
+}
+
+.aboutRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-top: 0.125rem;
+  max-width: 520px;
+}
+
+.aboutRight p {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  font-weight: var(--font-weight-light);
+  color: var(--color-fg);
+  margin: 0;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.signature {
+  font-style: italic;
+  font-size: 1.5rem !important;
+  align-self: flex-end;
+  margin-top: var(--spacing-md) !important;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 0 var(--spacing-md);
+  }
+
+  .aboutInner {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .aboutContent {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .aboutLeft {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bumerker {
+    width: 100px;
+    transform: none;
+    margin-left: 0;
+  }
+
+  .portrait {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .aboutRight {
+    max-width: none;
+  }
+
+  .signature {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* ─── Contact section ─── */
+
+.contact {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.contactInner {
+  padding: var(--spacing-xl) 0;
+}
+
+.contactLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactCompany {
+  font-weight: var(--font-weight-bold);
+  font-size: 0.9375rem;
+  margin: 0 0 0.25rem;
+  color: var(--color-fg);
+}
+
+.contactDetail {
+  font-weight: var(--font-weight-light);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  margin: 0;
+  color: var(--color-fg);
+}
+
+.contactGap {
+  height: 1rem;
+}
+
+.contactLink {
+  color: var(--color-fg);
+  font-weight: var(--font-weight-light);
+}
+
+.contactPerson {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactPortrait {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1.25rem;
+}
+
+.personCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.personName {
+  font-weight: var(--font-weight-bold);
+  font-size: 0.9375rem;
+  margin: 0 0 0.125rem;
+  color: var(--color-fg);
+}
+
+.personTitle {
+  font-weight: var(--font-weight-light);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  margin: 0;
+  color: var(--color-fg);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 0 var(--spacing-md);
+  }
+
+  .contactInner {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .contactLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .contactPortrait {
+    max-width: 100%;
+  }
+}

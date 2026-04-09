@@ -4,7 +4,7 @@
     "about": "Om oss",
     "product": "Produkt",
     "events": "Kva skjer",
-    "contact": "Kontakt oss"
+    "contact": "Ta kontakt"
   },
   "lang": {
     "no-nb": "Norsk bokmål",
@@ -135,32 +135,25 @@
     }
   },
   "contact": {
-    "title": "Kontakt oss – Takka AS",
+    "title": "Ta kontakt – Takka AS",
     "description": "Ta kontakt med Takka AS – vi hjelper deg gjerne.",
-    "heading": "Kontakt oss",
-    "intro": "Har du spørsmål? Vi er her for å hjelpe.",
-    "form": {
-      "name": "Namn",
-      "namePlaceholder": "Fullt namn",
-      "email": "E-postadresse",
-      "emailPlaceholder": "din@epost.no",
-      "message": "Melding",
-      "messagePlaceholder": "Skriv meldinga di her...",
-      "submit": "Send melding",
-      "success": "Takk! Vi tek kontakt snart.",
-      "error": "Noko gjekk gale. Prøv igjen.",
-      "required": "Påkravd felt",
-      "invalidEmail": "Ugyldig e-postadresse"
-    },
+    "heading": "Ta kontakt",
     "info": {
-      "heading": "Kontaktinformasjon",
-      "address": "Adresse",
-      "addressValue": "Eksempelgata 1, 0001 Oslo",
-      "email": "E-post",
-      "emailValue": "hei@takka.no",
-      "phone": "Telefon",
-      "phoneValue": "+47 000 00 000"
+      "company": "TAKKA AS",
+      "addressLine1": "Grønnesvegen 335",
+      "addressLine2": "6456 Skåla",
+      "phoneLabel": "Tlf",
+      "phone": "97 66 69 69",
+      "emailLabel": "e-post",
+      "email": "post@takka.no"
     },
-    "map": "Kart kjem snart"
+    "person": {
+      "name": "Kirsti Edøy",
+      "title": "Dagleg leiar og lefsebaker",
+      "phoneLabel": "Tlf",
+      "phone": "97 66 69 69",
+      "emailLabel": "e-post",
+      "email": "kirsti@takka.no"
+    }
   }
 }

@@ -4,7 +4,7 @@
     "about": "About us",
     "product": "Product",
     "events": "What's on",
-    "contact": "Contact us"
+    "contact": "Get in touch"
   },
   "lang": {
     "no-nb": "Norsk bokmål",
@@ -135,32 +135,25 @@
     }
   },
   "contact": {
-    "title": "Contact us – Takka AS",
+    "title": "Get in touch – Takka AS",
     "description": "Get in touch with Takka AS – we are happy to help.",
-    "heading": "Contact us",
-    "intro": "Do you have questions? We are here to help.",
-    "form": {
-      "name": "Name",
-      "namePlaceholder": "Your full name",
-      "email": "Email address",
-      "emailPlaceholder": "your@email.com",
-      "message": "Message",
-      "messagePlaceholder": "Write your message here...",
-      "submit": "Send message",
-      "success": "Thank you! We will be in touch soon.",
-      "error": "Something went wrong. Please try again.",
-      "required": "Required field",
-      "invalidEmail": "Invalid email address"
-    },
+    "heading": "Get in touch",
     "info": {
-      "heading": "Contact information",
-      "address": "Address",
-      "addressValue": "Eksempelgata 1, 0001 Oslo",
-      "email": "Email",
-      "emailValue": "hei@takka.no",
-      "phone": "Phone",
-      "phoneValue": "+47 000 00 000"
+      "company": "TAKKA AS",
+      "addressLine1": "Grønnesvegen 335",
+      "addressLine2": "6456 Skåla",
+      "phoneLabel": "Phone",
+      "phone": "97 66 69 69",
+      "emailLabel": "email",
+      "email": "post@takka.no"
     },
-    "map": "Map coming soon"
+    "person": {
+      "name": "Kirsti Edøy",
+      "title": "Managing director and lefse baker",
+      "phoneLabel": "Phone",
+      "phone": "97 66 69 69",
+      "emailLabel": "email",
+      "email": "kirsti@takka.no"
+    }
   }
 }

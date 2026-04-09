@@ -1,13 +1,30 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { useEffect, lazy, Suspense } from "react";
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
+    if (hash) {
+      const id = hash.replace("#", "");
+      // Small delay to let the DOM render before scrolling
+      const timer = setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 0);
+      return () => clearTimeout(timer);
+    }
     window.scrollTo({ top: 0, behavior: "instant" });
-  }, [pathname]);
+  }, [pathname, hash]);
   return null;
 }
 import Header from "./components/Header/Header";
@@ -15,11 +32,9 @@ import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
 import styles from "./App.module.css";
 
-const AboutPage = lazy(() => import("./pages/AboutPage/AboutPage"));
 const ProductPage = lazy(() => import("./pages/ProductPage/ProductPage"));
 const EventPage = lazy(() => import("./pages/EventPage/EventPage"));
 const EventDetailPage = lazy(() => import("./pages/EventPage/EventDetailPage"));
-const ContactPage = lazy(() => import("./pages/ContactPage/ContactPage"));
 
 function AppContent() {
   const { t, i18n } = useTranslation();
@@ -39,11 +54,17 @@ function AppContent() {
         <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/om-oss" element={<AboutPage />} />
+            <Route
+              path="/om-oss"
+              element={<Navigate to="/#om-oss" replace />}
+            />
+            <Route
+              path="/kontakt-oss"
+              element={<Navigate to="/#kontakt-oss" replace />}
+            />
             <Route path="/produkt" element={<ProductPage />} />
             <Route path="/hva-skjer" element={<EventPage />} />
             <Route path="/hva-skjer/:slug" element={<EventDetailPage />} />
-            <Route path="/kontakt-oss" element={<ContactPage />} />
           </Routes>
         </Suspense>
       </main>
