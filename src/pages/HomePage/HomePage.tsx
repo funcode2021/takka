@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import SEO from "../../components/SEO/SEO";
 import JsonLd from "../../components/JsonLd/JsonLd";
@@ -58,7 +57,6 @@ const localBusinessSchema = {
 
 export default function HomePage() {
   const { t } = useTranslation();
-  const [email, setEmail] = useState("");
 
   return (
     <>
