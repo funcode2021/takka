@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import SEO from "../../components/SEO/SEO";
 import JsonLd from "../../components/JsonLd/JsonLd";
@@ -57,6 +58,7 @@ const localBusinessSchema = {
 
 export default function HomePage() {
   const { t } = useTranslation();
+  const [email, setEmail] = useState("");
 
   return (
     <>
@@ -210,6 +212,36 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Newsletter — temporarily hidden */}
+      {/* <section
+        className={styles.newsletter}
+        aria-labelledby="newsletter-heading"
+      >
+        <div className={styles.newsletterInner}>
+          <h2 id="newsletter-heading" className={styles.newsletterHeading}>
+            {t("newsletter.heading")}
+          </h2>
+          <p className={styles.newsletterDesc}>{t("newsletter.description")}</p>
+          <form
+            className={styles.newsletterForm}
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder={t("newsletter.placeholder")}
+              className={styles.newsletterInput}
+              aria-label={t("newsletter.placeholder")}
+              required
+            />
+            <button type="submit" className={styles.newsletterSubmit}>
+              {t("newsletter.submit")}
+            </button>
+          </form>
+        </div>
+      </section> */}
     </>
   );
 }

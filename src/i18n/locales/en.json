@@ -20,7 +20,14 @@
   "footer": {
     "copyright": "© {{year}} Takka AS. All rights reserved.",
     "nav": "Navigation",
-    "follow": "Follow us"
+    "follow": "Follow us",
+    "credit": "Design by YA. Studio"
+  },
+  "newsletter": {
+    "heading": "Stay updated",
+    "description": "Sign up for our newsletter and receive news, recipes and invitations straight to your inbox.",
+    "placeholder": "Your email address",
+    "submit": "Subscribe"
   },
   "home": {
     "title": "Takka AS",
