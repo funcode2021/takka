@@ -48,6 +48,8 @@
 }
 
 html {
+  /* Fluid base: ~16px on mobile up to ~24px (≈150%) on wide desktops */
+  font-size: clamp(1rem, 0.75rem + 0.9vw, 1.5rem);
   scroll-behavior: smooth;
 }
 
