@@ -59,18 +59,19 @@
     "items": {
       "solemdalslefse": {
         "name": "Solemdalslefse\u00ae",
-        "desc1": "Solemdalslefsa er en klassisk norsk tradisjonslefse, bakt etter oppskrift fra Solemdal. Tynnbakt, myk og med den karakteristiske smaken av smør og sukker. Perfekt til kaffe, eller som et mellommåltid når du trenger noe godt.",
-        "desc2": "Hver lefse bakes for hånd på tradisjonelt vis. Vi bruker kun råvarer av høyeste kvalitet, og tar oss god tid i alle ledd. Det smaker du på resultatet."
+        "desc1": "Solemdalslefsa er en klassisk norsk tradisjonslefse, bakt etter gammel oppskrift fra Solemdalen. Tynn, myk lefse smurt med en luftig krem. Perfekt til kaffe, eller som et mellommåltid når du trenger noe godt.",
+        "desc2": "Hver lefse kjevles for hånd på tradisjonelt vis. Vi bruker kun råvarer av høye kvalitet, og tar oss god tid i alle ledd. "
       },
       "buggelefse": {
         "name": "Buggelefse\u00ae",
-        "desc1": "Buggelefsa er en tykkere og mer rustikk lefse med en fyldig og god smak. Oppskriften stammer fra Brokstad Gård og har gått i arv gjennom generasjoner. Perfekt til pålegg eller späkekjøtt.",
-        "desc2": "Vi baker buggelefsa med respekt for tradisjonen. God tid, gode råvarer og et ekte håndverk som du kan smake i hver bit."
+        "desc1": "Buggelefsa er ei smakfull tynnlefse med potet i deigen. Oppskrifta ble utviklet av bakstekoner på Bugge i Romsdal.",
+        "desc2": "Vi baker buggelefsa med respekt for tradisjonen. Hver lefseleiv deles i fire og rulles i ruller. God tid, gode råvarer og et ekte håndverk som du kan smake i hver bit."
       },
+
       "morsLefse": {
         "name": "Mors lefse\u00ae",
-        "desc1": "Mors lefse er den mjuke, gode lefsa som minner om barndom og bestemødre. Enkel og ekte, uten snarveier. Bakt på poteter, mel og smør – slik det alltid har vært gjort.",
-        "desc2": "En smak av det som var. Mors lefse er for deg som setter pris på det enkle og genuine. Bakt med omtanke, hver eneste dag."
+        "desc1": "Mors lefse er den mjuke, gode lefsa som minner om barndom og bestemødre. Enkel og ekte, uten snarveier. Smurt med smør, sukker og kanel – slik det alltid har vært gjort.",
+        "desc2": "En smak av det som var. Mors tynnlefse er for deg som setter pris på det enkle og genuine. Bakt med omtanke, hver eneste dag."
       }
     }
   },
@@ -82,7 +83,7 @@
       "godeRavarer": {
         "label": "Gode råvarer",
         "story": {
-          "p1": "Alt begynner med råvarene. Vi bruker kun mel av høyeste kvalitet, ekte smør og ferske poteter fra lokale gårder.",
+          "p1": "Alt begynner med råvarene. Vi bruker kun mel av høyeste kvalitet, ekte smør og norske poteter og egg fra lokale høner.",
           "p2": "Hver ingrediens er nøye utvalgt for å sikre at smaken blir akkurat slik den skal være — rik, ren og ekte.",
           "p3": "Vi tror på at gode råvarer er grunnlaget for godt håndverk. Uten dem, ingen skikkelig lefse.",
           "p4": "Leverandørene våre deler vår lidenskap for kvalitet. Mange av dem har vi samarbeidet med i flere tiår.",
@@ -90,7 +91,7 @@
         }
       },
       "hviletidenDetTar": {
-        "label": "Hviletiden det tar",
+        "label": "Tiden det tar",
         "story": {
           "p1": "Noen ting rett og slett er for gode til å forsvinne. Lefser er én av dem. Det var derfor jeg valgte å føre bakeriet videre.",
           "p2": "Fra lefsebakeriet på Brokstad Gård holder vi nå liv i en tradisjonsrik norsk kulturarv og ønsker å bringe lefsa videre til yngre generasjoner.",
@@ -120,13 +121,13 @@
         }
       },
       "viSikterHoyt": {
-        "label": "Vi sikter høyt",
+        "label": "",
         "story": {
-          "p1": "Å sikte mel er et av de viktigste stegene i prosessen. Det gir et lettere, luftigere resultat.",
-          "p2": "Vi bruker tradisjonelle siktemetoder kombinert med moderne utstyr for å oppnå perfekt konsistens.",
-          "p3": "Det handler om presisjon. Riktig mengde mel, riktig sikting, riktig tekstur.",
-          "p4": "Små detaljer utgjør stor forskjell i sluttproduktet. Det er noe vi aldri kompromisser på.",
-          "p5": "For oss er det ikke bare et ordspill — vi sikter faktisk høyt, i alt vi gjør."
+          "p1": "",
+          "p2": "",
+          "p3": "",
+          "p4": "",
+          "p5": ""
         }
       },
       "redskap": {
