@@ -20,7 +20,14 @@
   "footer": {
     "copyright": "© {{year}} Takka AS. Alle rettar atterhaldne.",
     "nav": "Navigasjon",
-    "follow": "Følg oss"
+    "follow": "Følg oss",
+    "credit": "Design av YA. Studio"
+  },
+  "newsletter": {
+    "heading": "Hald deg oppdatert",
+    "description": "Meld deg på nyheitsbrevet vårt og få nyheiter, oppskrifter og invitasjonar rett i innboksen.",
+    "placeholder": "Di e-postadresse",
+    "submit": "Meld på"
   },
   "home": {
     "title": "Takka AS",

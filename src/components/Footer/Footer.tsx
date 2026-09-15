@@ -53,6 +53,7 @@ export default function Footer() {
         <div className={styles.brand}>
           <p className={styles.brandName}>Takka AS</p>
           <p className={styles.copyright}>{t("footer.copyright", { year })}</p>
+          <p className={styles.credit}>{t("footer.credit")}</p>
         </div>
 
         <nav aria-label={t("footer.nav")} className={styles.nav}>

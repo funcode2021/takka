@@ -188,18 +188,10 @@ export default function Header() {
                 )}
               </li>
             ))}
-            {rightNav.map((item) => (
-              <li key={item.label}>
-                {item.external ? (
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.navLink}
-                  >
-                    {item.label}
-                  </a>
-                ) : (
+            {rightNav
+              .filter((item) => !item.external)
+              .map((item) => (
+                <li key={item.label}>
                   <button
                     type="button"
                     className={styles.navLink}
@@ -207,9 +199,8 @@ export default function Header() {
                   >
                     {item.label}
                   </button>
-                )}
-              </li>
-            ))}
+                </li>
+              ))}
           </ul>
         </div>
       </div>
