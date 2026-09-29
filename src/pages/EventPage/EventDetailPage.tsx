@@ -22,21 +22,12 @@ const EVENT_KEYS: Record<string, string> = {
 };
 
 const EVENT_IMAGES: Record<string, string> = {
-  "gode-ravarer": "/webp/Takka_Takk for sist_1.webp",
+  "gode-ravarer": "/webp/raavarer.webp",
   "hviletiden-det-tar": "/webp/Takka_Takk for sist_4.webp",
   "mot-oss-pa-marked": "/webp/Takka_Takk for sist_7.webp",
-  "pa-takka": "/webp/Takka_Takk for sist_6.webp",
+  "pa-takka": "/webp/takka.webp",
   "vi-sikter-hoyt": "/webp/Takka_Takk for sist_12.webp",
   redskap: "/webp/Takka_Takk for sist_22.webp",
-};
-
-// Detail pages that show several images instead of the listing image
-const EVENT_DETAIL_IMAGES: Record<string, string[]> = {
-  "gode-ravarer": [
-    "/webp/hvit-italiener-2.webp",
-    "/webp/ku.webp",
-    "/webp/hvete.webp",
-  ],
 };
 
 export { EVENT_SLUGS, EVENT_KEYS, EVENT_IMAGES };
@@ -50,7 +41,7 @@ export default function EventDetailPage() {
   }
 
   const key = EVENT_KEYS[slug];
-  const images = EVENT_DETAIL_IMAGES[slug] ?? [EVENT_IMAGES[slug]];
+  const image = EVENT_IMAGES[slug];
 
   return (
     <>
@@ -90,14 +81,11 @@ export default function EventDetailPage() {
               </div>
             </div>
             <div className={styles.imageWrap}>
-              {images.map((src) => (
-                <img
-                  key={src}
-                  src={src}
-                  alt={t(`events.items.${key}.label`)}
-                  className={styles.image}
-                />
-              ))}
+              <img
+                src={image}
+                alt={t(`events.items.${key}.label`)}
+                className={styles.image}
+              />
             </div>
           </div>
         </div>

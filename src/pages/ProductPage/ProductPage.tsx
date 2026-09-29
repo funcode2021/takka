@@ -16,9 +16,21 @@ const productSchema = {
 };
 
 const PRODUCTS = [
-  { key: "solemdalslefse", image: "/webp/Takka_Takk for sist_26.webp" },
-  { key: "buggelefse", image: "/webp/Takka_Takk for sist_34.webp" },
-  { key: "morsLefse", image: "/webp/Takka_Takk for sist_25.webp" },
+  {
+    key: "solemdalslefse",
+    image: "/webp/Takka_Takk for sist_26.webp",
+    spesialitet: true,
+  },
+  {
+    key: "buggelefse",
+    image: "/webp/Takka_Takk for sist_34.webp",
+    spesialitet: false,
+  },
+  {
+    key: "morsLefse",
+    image: "/webp/Takka_Takk for sist_25.webp",
+    spesialitet: true,
+  },
 ] as const;
 
 export default function ProductPage() {
@@ -48,7 +60,7 @@ export default function ProductPage() {
           </h1>
 
           <ul className={styles.grid} role="list">
-            {PRODUCTS.map(({ key, image }, i) => (
+            {PRODUCTS.map(({ key, image, spesialitet }, i) => (
               <li key={key} className={styles.card}>
                 <div className={styles.cardImageWrap}>
                   <img
@@ -60,6 +72,13 @@ export default function ProductPage() {
                   <span className={styles.cardLabel}>
                     {t(`product.items.${key}.name`)}
                   </span>
+                  {spesialitet && (
+                    <img
+                      src="/spesialitet.svg"
+                      alt="Spesialitet"
+                      className={styles.spesialitet}
+                    />
+                  )}
                   {i === PRODUCTS.length - 1 && (
                     <img
                       src="/bumerker.svg"
