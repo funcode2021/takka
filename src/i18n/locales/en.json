@@ -82,11 +82,11 @@
       "godeRavarer": {
         "label": "Fine ingredients",
         "story": {
-          "p1": "Everything starts with the ingredients. We use only the finest flour, real butter and fresh potatoes from local farms.",
-          "p2": "Every ingredient is carefully selected to ensure the taste is exactly as it should be — rich, pure and authentic.",
-          "p3": "We believe that fine ingredients are the foundation of good craft. Without them, no proper lefse.",
-          "p4": "Our suppliers share our passion for quality. Many of them we have worked with for decades.",
-          "p5": "There are no shortcuts. And that is precisely what makes the difference."
+          "p1": "First-class ingredients are essential for good lefse!",
+          "p2": "The eggs we use come from local hens. We collect our eggs from Tuppen and Lillemor, between the steep mountains of Sunndalen.",
+          "p3": "The milk behind all the dairy products we use in production comes from local cows - perhaps the very ones grazing on Bolsøya. TINE makes sure the milk we receive comes from the nearest of the 7,000 dairy farmers in Norway who supply milk to TINE.",
+          "p4": "Flour is a key ingredient in lefse. We use 100% Norwegian wheat from Regal.",
+          "p5": "Safe and delicious. No shortcuts. And that is exactly what makes the difference."
         }
       },
       "hviletidenDetTar": {
