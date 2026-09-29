@@ -4,6 +4,7 @@ import SEO from "../../components/SEO/SEO";
 import JsonLd from "../../components/JsonLd/JsonLd";
 import {
   BAKERY_ID,
+  SITE_URL,
   absoluteUrl,
   breadcrumbSchema,
   graph,
@@ -62,7 +63,7 @@ export default function ProductPage() {
       <SEO
         title={t("product.title")}
         description={t("product.description")}
-        canonical="https://takka.no/produkt"
+        canonical={`${SITE_URL}/produkt`}
       />
       <JsonLd schema={productSchema} />
 

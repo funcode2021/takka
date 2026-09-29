@@ -50,7 +50,7 @@ export default function EventPage() {
       <SEO
         title={t("events.title")}
         description={t("events.description")}
-        canonical="https://takka.no/hva-skjer"
+        canonical={`${SITE_URL}/hva-skjer`}
       />
       <JsonLd schema={eventSchema} />
 

@@ -1,7 +1,7 @@
 // Shared schema.org data. Pages reference the bakery by @id instead of
 // repeating it, so search engines and AI crawlers see a single entity.
 
-export const SITE_URL = "https://takka.no";
+export const SITE_URL = "https://www.takka.no";
 export const BAKERY_ID = `${SITE_URL}/#bakery`;
 
 // Crawlers need absolute URLs; also encodes the spaces in image file names

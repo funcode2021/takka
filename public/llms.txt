@@ -6,9 +6,9 @@ Takka AS (Norwegian lefse bakery in Skåla, Romsdal, Norway) bakes traditional h
 
 ## Produkter
 
-- [Solemdalslefse®](https://takka.no/produkt): Klassisk tradisjonslefse etter gammel oppskrift fra Solemdalen. Tynn, myk lefse smurt med en luftig krem. Kjevles for hånd. Merket Spesialitet (Matmerk).
-- [Buggelefse®](https://takka.no/produkt): Smakfull tynnlefse med potet i deigen, utviklet av bakstekoner på Bugge i Romsdal. Hver leiv deles i fire og rulles.
-- [Mors Tynnlefse®](https://takka.no/produkt): Myk tynnlefse smurt med smør, sukker og kanel. Merket Spesialitet (Matmerk).
+- [Solemdalslefse®](https://www.takka.no/produkt): Klassisk tradisjonslefse etter gammel oppskrift fra Solemdalen. Tynn, myk lefse smurt med en luftig krem. Kjevles for hånd. Merket Spesialitet (Matmerk).
+- [Buggelefse®](https://www.takka.no/produkt): Smakfull tynnlefse med potet i deigen, utviklet av bakstekoner på Bugge i Romsdal. Hver leiv deles i fire og rulles.
+- [Mors Tynnlefse®](https://www.takka.no/produkt): Myk tynnlefse smurt med smør, sukker og kanel. Merket Spesialitet (Matmerk).
 
 ## Hvor kan man kjøpe lefsene?
 
@@ -31,6 +31,6 @@ Egg fra lokale høner i Sunndalen, melk fra lokale gårder via TINE, og 100 % no
 
 ## Sider
 
-- [Forside og om oss](https://takka.no/): Historien bak bakeriet og kontaktinformasjon
-- [Produkter](https://takka.no/produkt): Alle lefsene våre
-- [Hva skjer](https://takka.no/hva-skjer): Historier om råvarene, redskapene, bakingen på takka og markedene vi deltar på
+- [Forside og om oss](https://www.takka.no/): Historien bak bakeriet og kontaktinformasjon
+- [Produkter](https://www.takka.no/produkt): Alle lefsene våre
+- [Hva skjer](https://www.takka.no/hva-skjer): Historier om råvarene, redskapene, bakingen på takka og markedene vi deltar på

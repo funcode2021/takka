@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
-const SITE = "https://takka.no";
+const SITE = "https://www.takka.no";
 
 const { render, routes, sitemapRoutes } = await import(
   path.join(root, "dist-server/entry-server.js")

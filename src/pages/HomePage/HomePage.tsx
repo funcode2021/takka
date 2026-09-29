@@ -1,7 +1,12 @@
 import { useTranslation } from "react-i18next";
 import SEO from "../../components/SEO/SEO";
 import JsonLd from "../../components/JsonLd/JsonLd";
-import { bakerySchema, graph, websiteSchema } from "../../seo/schema";
+import {
+  SITE_URL,
+  bakerySchema,
+  graph,
+  websiteSchema,
+} from "../../seo/schema";
 import styles from "./HomePage.module.css";
 
 const homeSchema = graph(websiteSchema, bakerySchema);
@@ -14,7 +19,7 @@ export default function HomePage() {
       <SEO
         title={t("home.title")}
         description={t("home.description")}
-        canonical="https://takka.no/"
+        canonical={`${SITE_URL}/`}
       />
       <JsonLd schema={homeSchema} />
 
