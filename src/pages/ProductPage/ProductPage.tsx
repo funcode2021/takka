@@ -2,18 +2,13 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import SEO from "../../components/SEO/SEO";
 import JsonLd from "../../components/JsonLd/JsonLd";
+import {
+  BAKERY_ID,
+  absoluteUrl,
+  breadcrumbSchema,
+  graph,
+} from "../../seo/schema";
 import styles from "./ProductPage.module.css";
-
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Takka AS – Produkter",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Solemdalslefse" },
-    { "@type": "ListItem", position: 2, name: "Buggelefse" },
-    { "@type": "ListItem", position: 3, name: "Mors Tynnlefse" },
-  ],
-};
 
 const PRODUCTS = [
   {
@@ -35,6 +30,32 @@ const PRODUCTS = [
 
 export default function ProductPage() {
   const { t } = useTranslation();
+
+  const productSchema = graph(
+    breadcrumbSchema([
+      { name: t("nav.home"), path: "/" },
+      { name: t("nav.product") },
+    ]),
+    {
+      "@type": "ItemList",
+      name: t("product.heading"),
+      itemListElement: PRODUCTS.map(({ key, image, spesialitet }, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Product",
+          name: t(`product.items.${key}.name`),
+          description: t(`product.items.${key}.desc1`),
+          image: absoluteUrl(image),
+          category: "Lefse",
+          brand: { "@type": "Brand", name: "Takka" },
+          manufacturer: { "@id": BAKERY_ID },
+          countryOfOrigin: "NO",
+          ...(spesialitet && { award: "Spesialitet (Matmerk)" }),
+        },
+      })),
+    },
+  );
 
   return (
     <>

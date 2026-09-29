@@ -30,8 +30,9 @@
     "submit": "Meld på"
   },
   "home": {
-    "title": "Takka AS",
-    "description": "Velkomen til Takka AS – din lokale partnar.",
+    "title": "Takka – handlaga lefse frå Skåla i Romsdal",
+    "description": "Lefsebakeri på Skåla i Romsdal. Vi bakar Solemdalslefse, Buggelefse og Mors Tynnlefse for hand, med lokale råvarer.",
+    "heroAlt": "Lefseemne drysa med mjøl ved sida av rifla lefsekjevlar",
     "hero": {
       "p1": "Har det på tunga. Den enkle, ekte smaken. Laga for hand – ofte av bestemor.",
       "p2": "Hjå Takka tek vi vare på det som var. Oppskrifter, råvarer og tida det tek.",
@@ -39,10 +40,10 @@
     }
   },
   "about": {
-    "title": "Om oss – Takka AS",
+    "title": "Om oss",
     "description": "Les om historia, verdiane og teamet bak Takka AS.",
     "heading": "Om oss",
-    "imageAlt": "Kirsti Elly i lefsebakeriet på Brokstad Gård",
+    "imageAlt": "Kirsti Edøy i lefsebakeriet på Brokstad Gård",
     "story": {
       "p1": "Nokre ting er rett og slett for gode til å forsvinne. Lefser er éin av dei. Det var difor eg valde å føre bakeriet vidare.",
       "p2": "Frå lefsebakeriet på Brokstad Gård held vi no liv i ein tradisjonsrik norsk kulturarv og ønskjer å bringe lefsa vidare til yngre generasjonar.",
@@ -53,8 +54,8 @@
     "signature": "Kirsti Edøy"
   },
   "product": {
-    "title": "Produkt – Takka AS",
-    "description": "Utforsk produktkatalogen til Takka AS.",
+    "title": "Lefser frå Takka – Solemdalslefse, Buggelefse og Mors Tynnlefse",
+    "description": "Tradisjonelle lefser bakte etter gamle oppskrifter frå Romsdal: Solemdalslefse, Buggelefse og Mors Tynnlefse. Kjevla for hand av Takka på Skåla.",
     "heading": "Produkta våre",
     "items": {
       "solemdalslefse": {
@@ -75,8 +76,8 @@
     }
   },
   "events": {
-    "title": "Kva skjer – Takka AS",
-    "description": "Historier og hendingar frå Takka AS – tradisjonsrikt lefsebakeri.",
+    "title": "Kva skjer",
+    "description": "Historier frå lefsebakeriet Takka: råvarene vi brukar, reiskapen, bakinga på takka og kvar du kan møte oss på marknad.",
     "heading": "Kva skjer",
     "items": {
       "godeRavarer": {
@@ -142,7 +143,7 @@
     }
   },
   "contact": {
-    "title": "Ta kontakt – Takka AS",
+    "title": "Ta kontakt",
     "description": "Ta kontakt med Takka AS – vi hjelper deg gjerne.",
     "heading": "Ta kontakt",
     "info": {

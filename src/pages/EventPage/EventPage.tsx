@@ -3,19 +3,8 @@ import { NavLink, Link } from "react-router-dom";
 import SEO from "../../components/SEO/SEO";
 import JsonLd from "../../components/JsonLd/JsonLd";
 import { EVENT_SLUGS, EVENT_KEYS, EVENT_IMAGES } from "./EventDetailPage";
+import { breadcrumbSchema, graph, SITE_URL } from "../../seo/schema";
 import styles from "./EventPage.module.css";
-
-const eventSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Takka AS – Hva skjer",
-  itemListElement: EVENT_SLUGS.map((slug, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    name: slug,
-    url: `https://takka.no/hva-skjer/${slug}`,
-  })),
-};
 
 /** Bento grid sizing per item index */
 const SIZES: Array<"small" | "medium" | "large"> = [
@@ -29,6 +18,25 @@ const SIZES: Array<"small" | "medium" | "large"> = [
 
 export default function EventPage() {
   const { t } = useTranslation();
+
+  const eventSchema = graph(
+    breadcrumbSchema([
+      { name: t("nav.home"), path: "/" },
+      { name: t("nav.events") },
+    ]),
+    {
+      "@type": "ItemList",
+      name: t("events.heading"),
+      itemListElement: EVENT_SLUGS.filter(
+        (slug) => t(`events.items.${EVENT_KEYS[slug]}.label`) !== "",
+      ).map((slug, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: t(`events.items.${EVENT_KEYS[slug]}.label`),
+        url: `${SITE_URL}/hva-skjer/${slug}`,
+      })),
+    },
+  );
 
   /* Split items into 3 columns: [0,3], [1,4], [2,5] */
   const columns = [

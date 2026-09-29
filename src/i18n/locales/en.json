@@ -30,8 +30,9 @@
     "submit": "Subscribe"
   },
   "home": {
-    "title": "Takka AS",
-    "description": "Welcome to Takka AS – your local partner.",
+    "title": "Takka – handmade lefse from Skåla in Romsdal, Norway",
+    "description": "Lefse bakery in Skåla, Romsdal, Norway. We bake Solemdalslefse, Buggelefse and Mors Tynnlefse by hand, using local ingredients.",
+    "heroAlt": "Flour-dusted balls of lefse dough next to grooved lefse rolling pins",
     "hero": {
       "p1": "On the tip of the tongue. The simple, authentic taste. Made by hand – often by grandmother.",
       "p2": "At Takka, we cherish what was. Recipes, ingredients, and the time it takes.",
@@ -39,10 +40,10 @@
     }
   },
   "about": {
-    "title": "About us – Takka AS",
+    "title": "About us",
     "description": "Read about the history, values and team behind Takka AS.",
     "heading": "About us",
-    "imageAlt": "Kirsti Elly in the lefse bakery at Brokstad Gård",
+    "imageAlt": "Kirsti Edøy in the lefse bakery at Brokstad Gård",
     "story": {
       "p1": "Some things are simply too good to disappear. Lefser are one of them. That is why I chose to carry the bakery forward.",
       "p2": "From the lefse bakery at Brokstad Gård, we now keep a rich Norwegian cultural heritage alive and wish to bring the lefse tradition to younger generations.",
@@ -53,8 +54,8 @@
     "signature": "Kirsti Edøy"
   },
   "product": {
-    "title": "Products – Takka AS",
-    "description": "Explore the product catalogue of Takka AS.",
+    "title": "Lefse from Takka – Solemdalslefse, Buggelefse and Mors Tynnlefse",
+    "description": "Traditional Norwegian lefse baked to old recipes from Romsdal: Solemdalslefse, Buggelefse and Mors Tynnlefse. Rolled by hand by Takka in Skåla.",
     "heading": "Our products",
     "items": {
       "solemdalslefse": {
@@ -75,8 +76,8 @@
     }
   },
   "events": {
-    "title": "What's on – Takka AS",
-    "description": "Stories and happenings from Takka AS – a traditional lefse bakery.",
+    "title": "What's on",
+    "description": "Stories from the Takka lefse bakery: our ingredients, our tools, baking on the griddle, and where to meet us at markets.",
     "heading": "What's on",
     "items": {
       "godeRavarer": {
@@ -142,7 +143,7 @@
     }
   },
   "contact": {
-    "title": "Get in touch – Takka AS",
+    "title": "Get in touch",
     "description": "Get in touch with Takka AS – we are happy to help.",
     "heading": "Get in touch",
     "info": {

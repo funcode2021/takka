@@ -2,7 +2,20 @@
   publish = "dist"
   command = "npm run build"
 
+# Old standalone pages now live as sections on the home page
+[[redirects]]
+  from = "/om-oss"
+  to = "/#om-oss"
+  status = 301
+
+[[redirects]]
+  from = "/kontakt-oss"
+  to = "/#kontakt-oss"
+  status = 301
+
+# Prerendered routes are served from their .html files; everything else gets
+# the unrendered SPA shell (the prerendered home page would mis-hydrate there)
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/spa.html"
   status = 200

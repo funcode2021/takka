@@ -1,6 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { NavLink, useParams, Navigate } from "react-router-dom";
 import SEO from "../../components/SEO/SEO";
+import JsonLd from "../../components/JsonLd/JsonLd";
+import {
+  BAKERY_ID,
+  SITE_URL,
+  absoluteUrl,
+  breadcrumbSchema,
+  graph,
+} from "../../seo/schema";
 import styles from "./EventDetailPage.module.css";
 
 const EVENT_SLUGS = [
@@ -32,6 +40,12 @@ const EVENT_IMAGES: Record<string, string> = {
 
 export { EVENT_SLUGS, EVENT_KEYS, EVENT_IMAGES };
 
+// Meta descriptions get cut off around 155 characters; end on a whole word
+function summarize(text: string, max = 155) {
+  if (text.length <= max) return text;
+  return text.slice(0, text.lastIndexOf(" ", max - 1)) + "…";
+}
+
 export default function EventDetailPage() {
   const { t } = useTranslation();
   const { slug } = useParams<{ slug: string }>();
@@ -42,14 +56,43 @@ export default function EventDetailPage() {
 
   const key = EVENT_KEYS[slug];
   const image = EVENT_IMAGES[slug];
+  const label = t(`events.items.${key}.label`);
+  const url = `${SITE_URL}/hva-skjer/${slug}`;
+
+  const articleSchema = graph(
+    breadcrumbSchema([
+      { name: t("nav.home"), path: "/" },
+      { name: t("nav.events"), path: "/hva-skjer" },
+      { name: label },
+    ]),
+    {
+      "@type": "Article",
+      headline: label,
+      url,
+      mainEntityOfPage: url,
+      image: absoluteUrl(image),
+      inLanguage: "nb",
+      author: { "@type": "Person", name: "Kirsti Edøy" },
+      publisher: { "@id": BAKERY_ID },
+      articleBody: [1, 2, 3, 4, 5]
+        .map((n) => t(`events.items.${key}.story.p${n}`))
+        .join("\n\n"),
+    },
+  );
 
   return (
     <>
       <SEO
-        title={`${t(`events.items.${key}.label`)} – Takka AS`}
-        description={t(`events.items.${key}.story.p1`)}
-        canonical={`https://takka.no/hva-skjer/${slug}`}
+        title={label}
+        description={summarize(
+          `${t(`events.items.${key}.story.p1`)} ${t(`events.items.${key}.story.p2`)}`,
+        )}
+        canonical={url}
+        ogImage={image}
+        ogType="article"
+        noindex={label === ""}
       />
+      <JsonLd schema={articleSchema} />
 
       <section className={styles.page}>
         <div className={styles.inner}>

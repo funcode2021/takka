@@ -36,11 +36,14 @@ const ProductPage = lazy(() => import("./pages/ProductPage/ProductPage"));
 const EventPage = lazy(() => import("./pages/EventPage/EventPage"));
 const EventDetailPage = lazy(() => import("./pages/EventPage/EventDetailPage"));
 
-function AppContent() {
+// BCP-47 tags for <html lang>; i18n uses "no-nb"/"no-nn" internally
+const HTML_LANG: Record<string, string> = { "no-nb": "nb", "no-nn": "nn", en: "en" };
+
+export function AppContent() {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    document.documentElement.lang = i18n.language;
+    document.documentElement.lang = HTML_LANG[i18n.language] ?? "nb";
   }, [i18n.language]);
 
   return (

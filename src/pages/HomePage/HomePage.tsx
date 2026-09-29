@@ -1,59 +1,10 @@
 import { useTranslation } from "react-i18next";
 import SEO from "../../components/SEO/SEO";
 import JsonLd from "../../components/JsonLd/JsonLd";
+import { bakerySchema, graph, websiteSchema } from "../../seo/schema";
 import styles from "./HomePage.module.css";
 
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "Takka AS",
-  url: "https://takka.no",
-  description:
-    "Takka AS – din lokale partner for kvalitetsprodukter og tjenester.",
-  sameAs: [
-    "https://www.facebook.com/takkaas",
-    "https://www.instagram.com/takkaas",
-  ],
-};
-
-const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Takka AS",
-  url: "https://takka.no",
-  logo: "https://takka.no/logo.png",
-  sameAs: [
-    "https://www.facebook.com/takkaas",
-    "https://www.instagram.com/takkaas",
-  ],
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Grønnesvegen 335",
-    addressLocality: "Skåla",
-    postalCode: "6456",
-    addressCountry: "NO",
-  },
-};
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Takka AS",
-  url: "https://takka.no",
-  telephone: "+4797666969",
-  email: "post@takka.no",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Grønnesvegen 335",
-    addressLocality: "Skåla",
-    postalCode: "6456",
-    addressCountry: "NO",
-  },
-  sameAs: [
-    "https://www.facebook.com/takkaas",
-    "https://www.instagram.com/takkaas",
-  ],
-};
+const homeSchema = graph(websiteSchema, bakerySchema);
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -65,16 +16,14 @@ export default function HomePage() {
         description={t("home.description")}
         canonical="https://takka.no/"
       />
-      <JsonLd schema={websiteSchema} />
-      <JsonLd schema={orgSchema} />
-      <JsonLd schema={localBusinessSchema} />
+      <JsonLd schema={homeSchema} />
 
       {/* Hero */}
       <section className={styles.hero} aria-labelledby="hero-heading">
         <div className={styles.heroImageWrap}>
           <img
             src="/webp/Takka_Takk for sist_13.webp"
-            alt=""
+            alt={t("home.heroAlt")}
             className={styles.heroImage}
             loading="eager"
             fetchPriority="high"
