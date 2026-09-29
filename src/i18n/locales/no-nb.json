@@ -21,7 +21,7 @@
     "copyright": "© {{year}} Takka AS. Alle rettigheter forbeholdt.",
     "nav": "Navigasjon",
     "follow": "Følg oss",
-    "credit": "Design av YA. Studio"
+    "credit": "Design av <studio>YA. Studio</studio>"
   },
   "newsletter": {
     "heading": "Hold deg oppdatert",
@@ -69,9 +69,9 @@
       },
 
       "morsLefse": {
-        "name": "Mors lefse\u00ae",
-        "desc1": "Mors lefse er den mjuke, gode lefsa som minner om barndom og bestemødre. Enkel og ekte, uten snarveier. Smurt med smør, sukker og kanel – slik det alltid har vært gjort.",
-        "desc2": "En smak av det som var. Mors tynnlefse er for deg som setter pris på det enkle og genuine. Bakt med omtanke, hver eneste dag."
+        "name": "Mors Tynnlefse\u00ae",
+        "desc1": "Mors Tynnlefse er den mjuke, gode lefsa som minner om barndom og bestemødre. Enkel og ekte, uten snarveier. Smurt med smør, sukker og kanel – slik det alltid har vært gjort.",
+        "desc2": "En smak av det som var. Mors Tynnlefse er for deg som setter pris på det enkle og genuine. Bakt med omtanke, hver eneste dag."
       }
     }
   },

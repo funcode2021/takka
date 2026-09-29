@@ -1,5 +1,5 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { useCallback } from "react";
 import styles from "./Footer.module.css";
 
@@ -53,7 +53,33 @@ export default function Footer() {
         <div className={styles.brand}>
           <p className={styles.brandName}>Takka AS</p>
           <p className={styles.copyright}>{t("footer.copyright", { year })}</p>
-          <p className={styles.credit}>{t("footer.credit")}</p>
+          <p className={styles.credit}>
+            <Trans
+              i18nKey="footer.credit"
+              components={{
+                studio: (
+                  <a
+                    href="https://www.yastudio.no/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.creditLink}
+                  />
+                ),
+              }}
+            />
+          </p>
+          <a
+            href="https://www.spesialitet.no/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.spesialitetLink}
+          >
+            <img
+              src="/spesialitet.svg"
+              alt="Spesialitet"
+              className={styles.spesialitetLogo}
+            />
+          </a>
         </div>
 
         <nav aria-label={t("footer.nav")} className={styles.nav}>

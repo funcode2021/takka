@@ -11,7 +11,7 @@ const productSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Solemdalslefse" },
     { "@type": "ListItem", position: 2, name: "Buggelefse" },
-    { "@type": "ListItem", position: 3, name: "Mors lefse" },
+    { "@type": "ListItem", position: 3, name: "Mors Tynnlefse" },
   ],
 };
 

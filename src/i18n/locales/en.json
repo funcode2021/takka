@@ -21,7 +21,7 @@
     "copyright": "© {{year}} Takka AS. All rights reserved.",
     "nav": "Navigation",
     "follow": "Follow us",
-    "credit": "Design by YA. Studio"
+    "credit": "Design by <studio>YA. Studio</studio>"
   },
   "newsletter": {
     "heading": "Stay updated",
@@ -68,9 +68,9 @@
         "desc2": "We bake buggelefse with respect for tradition. Good time, fine ingredients and a genuine craft you can taste in every bite."
       },
       "morsLefse": {
-        "name": "Mors lefse\u00ae",
-        "desc1": "Mors lefse is the soft, comforting lefse that reminds you of childhood and grandmothers. Simple and authentic, with no shortcuts. Baked with potatoes, flour and butter – the way it has always been done.",
-        "desc2": "A taste of what was. Mors lefse is for those who appreciate the simple and genuine. Baked with care, every single day."
+        "name": "Mors Tynnlefse\u00ae",
+        "desc1": "Mors Tynnlefse is the soft, comforting lefse that reminds you of childhood and grandmothers. Simple and authentic, with no shortcuts. Baked with potatoes, flour and butter – the way it has always been done.",
+        "desc2": "A taste of what was. Mors Tynnlefse is for those who appreciate the simple and genuine. Baked with care, every single day."
       }
     }
   },
